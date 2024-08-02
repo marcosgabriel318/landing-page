@@ -16,10 +16,10 @@
   </head>
   <body class="font-custom">
     <header
-      class="bg-transparent fixed w-full text-white border-b-2 lg:border-0 transition-all ease-out z-10"
+      class="fixed w-full text-white border-b-2 lg:border-0 transition-all ease-out z-10"
     >
-      <nav class="lg:flex lg:justify-between lg:mx-24 my-4">
-        <div class="mx-3">
+      <nav class="lg:flex lg:justify-between lg:mx-24 xl:mx-36 my-4 xl:my-6">
+        <div class="mx-3 lg:mx-0">
           <div class="flex justify-between items-center text-3xl lg:p-0">
             <img
               class="w-24 h-auto lg:w-48"
@@ -52,20 +52,22 @@
       <div class="section-hero h-svh lg:bg-bg-hero lg:bg-cover lg:bg-top">
         <!--lg:bg-bg-hero lg:bg-cover lg:bg-top"-->
         <div
-          class="lg:w-1/2 lg:absolute lg:top-1/3 lg:mx-24 lg:flex lg:flex-col lg:gap-6 lg:z-[1]"
+          class="lg:w-1/2 lg:absolute lg:top-1/3 lg:mx-24 xl:mx-36 lg:flex lg:flex-col lg:gap-6 lg:z-[1]"
         >
           <h3
-            class="lg:text-6xl lg:leading-[64px] lg:font-bold bg-gradient-to-r from-initial-font from-15% via-middle-font via-25% to-final-font to-90% inline-block text-transparent bg-clip-text"
+            class="lg:flex lg:flex-col lg:text-5xl min-xl:text-7xl lg:leading-[60px] min-xl:leading-[5rem] lg:font-bold bg-gradient-to-r from-initial-font from-15% via-middle-font via-25% to-final-font to-90% inline-block text-transparent bg-clip-text"
           >
-            Precisa de Ajuda com Benefícios do INSS? Estamos aqui para você!
+            <span>Precisa de Ajuda com</span>
+            <span>Benefícios do INSS?</span>
+            <span>Estamos aqui para você!</span>
           </h3>
-          <span class="text-white lg:text-2xl"
+          <span class="text-white lg:text-[1.2rem] lg:w-3/4"
             >Especialistas em Direito Previdenciário, prontos para ajudar você a
             conquistar seus direitos.
           </span>
           <a
             href="http://"
-            class="bg-btn-hero w-max font-bold p-3 rounded-2xl lg:text-xl"
+            class="bg-btn-hero w-max font-bold py-3 px-6 rounded-2xl lg:text-xl"
           >
             Saiba Mais
           </a>
@@ -75,6 +77,6 @@
       <div class="section-hero h-svh bg-blue-600"></div>
     </main>
 
-    <script src="/src/app.js"></script>
+    <script src="/src/app.js" defer></script>
   </body>
 </html>

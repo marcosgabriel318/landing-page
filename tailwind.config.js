@@ -1,7 +1,7 @@
 const { addDynamicIconSelectors } = require("@iconify/tailwind");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*{html,js}"],
+  content: ["./*{html,js}", "./src/*{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -12,7 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         "logo-header": "url('/src/images/logo_dourada.png')",
-        "bg-hero": "url('/src/images/background-hero.jpg')",
+        "bg-hero": "url('/src/images/background-hero-edited.jpg')",
       },
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],

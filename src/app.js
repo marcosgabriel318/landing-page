@@ -1,15 +1,13 @@
 const menuIcon = document.querySelector(".menu-icon");
 const menu = document.querySelector(".menu");
 const body = document.querySelector("body");
+const header = document.querySelector("header");
 
 document.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
   if (window.scrollY > 0) {
-    header.classList.remove("bg-transparent");
-    header.classList.add("bg-black");
+    header.classList.add("bg-[#131313]");
   } else {
-    header.classList.remove("bg-black");
-    header.classList.add("bg-transparent");
+    header.classList.remove("bg-[#131313]");
   }
 });
 
