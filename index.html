@@ -16,7 +16,7 @@
   </head>
   <body class="font-custom">
     <header
-      class="fixed w-full text-white border-b-2 lg:border-0 transition-all ease-out z-10"
+      class="fixed w-full text-white border-b-2 lg:border-0 transition-all ease-in-out z-10"
     >
       <nav class="lg:flex lg:justify-between lg:mx-24 xl:mx-36 my-4 xl:my-6">
         <div class="mx-3 lg:mx-0">
@@ -35,10 +35,16 @@
         <ol
           class="menu border-b-2 absolute w-full -top-[260px] -z-10 lg:z-[2] border-neutral-50 border-bla rounded-b-2xl text-center text-white lg:border-0 lg:flex lg:col lg:top-0 lg:relative lg:w-min lg:gap-x-8"
         >
-          <li class="py-2 my-1 border-b-2 lg:border-0">Início</li>
-          <li class="py-2 my-1 border-b-2 lg:border-0">Serviços</li>
+          <li class="py-2 my-1 border-b-2 lg:border-0">
+            <a href="#">Início</a>
+          </li>
           <li class="py-2 my-1 border-b-2 lg:border-0">Sobre</li>
-          <li class="py-2 my-1">Depoimentos</li>
+          <li class="py-2 my-1 border-b-2 lg:border-0">
+            <a href="#servicos">Serviços</a>
+          </li>
+          <li class="py-2 my-1">
+            <a href="#depoimentos">Depoimentos</a>
+          </li>
           <li class="py-2 my-1">
             <span class="py-2 px-10 my-1 rounded-2xl border-2 border-white"
               >Contato</span
@@ -49,6 +55,7 @@
     </header>
 
     <main>
+      <!-- Section hero main -->
       <div class="section-hero h-svh lg:bg-bg-hero lg:bg-cover lg:bg-top">
         <!--lg:bg-bg-hero lg:bg-cover lg:bg-top"-->
         <div
@@ -74,7 +81,171 @@
         </div>
       </div>
       <div class="section-hero h-svh bg-white"></div>
-      <div class="section-hero h-svh bg-blue-600"></div>
+
+      <!-- Section serviços -->
+      <div class="section-hero h-svh lg:h-auto bg-[#131313]" id="servicos">
+        <div class="lg:py-28 h-full">
+          <div class="lg:mx-36 lg:flex lg:flex-col lg:gap-y-4">
+            <h3
+              class="text-white lg:border-white lg:border-l-8 lg:text-3xl lg:pl-6"
+            >
+              Nossos Serviços
+            </h3>
+
+            <span class="text-white"
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui id,
+              deleniti beatae in perspiciatis quo voluptates velit fuga suscipit
+              voluptatibus ipsum pariatur fugiat unde quod, ea quibusdam,
+              consectetur placeat repellat!</span
+            >
+          </div>
+
+          <div class="text-white lg:mx-36 lg:my lg:h-full">
+            <div
+              class="list-services h-5/6 lg:mt-7 lg:grid lg:grid-flow-col lg:grid-rows-3 lg:gap-y-8 lg:justify-between grid"
+            >
+              <div class="border-2 p-4 w-max lg:flex lg:items-center">
+                BPC(Benefício de Prestação Continuada)
+              </div>
+              <div class="border-2 p-4 w-max lg:flex lg:items-center">
+                BPC(Benefício de Prestação Continuada)
+              </div>
+              <div class="border-2 p-4 w-max lg:flex lg:items-center">
+                BPC(Benefício de Prestação Continuada)
+              </div>
+              <div class="border-2 p-4 w-max lg:flex lg:items-center">
+                BPC(Benefício de Prestação Continuada)
+              </div>
+              <div class="border-2 p-4 w-max lg:flex lg:items-center">
+                BPC(Benefício de Prestação Continuada)
+              </div>
+              <div class="border-2 p-4 w-max lg:flex lg:items-center">
+                BPC(Benefício de Prestação Continuada)
+              </div>
+              <div class="border-2 p-4 w-max lg:flex lg:items-center">
+                BPC(Benefício de Prestação Continuada)
+              </div>
+              <div class="border-2 p-4 w-max lg:flex lg:items-center">
+                BPC(Benefício de Prestação Continuada)
+              </div>
+              <div class="border-2 p-4 w-max lg:flex lg:items-center">
+                BPC(Benefício de Prestação Continuada)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section depoimentos -->
+      <div class="section-hero h-svh lg:h-auto bg-white" id="depoimentos">
+        <div class="lg:py-28 h-full">
+          <div class="lg:mx-36 lg:flex lg:flex-col lg:gap-y-4">
+            <h3 class="lg:border-black lg:border-l-8 lg:text-3xl lg:pl-6">
+              O que nossos clientes dizem?
+            </h3>
+
+            <span class=""
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui id,
+              deleniti beatae in perspiciatis quo voluptates velit fuga suscipit
+              voluptatibus ipsum pariatur fugiat unde quod, ea quibusdam,
+              consectetur placeat repellat!</span
+            >
+          </div>
+
+          <div class="lg:mx-36 lg:my lg:h-full">
+            <div
+              class="list-depoimentos h-5/6 lg:mt-7 lg:grid lg:grid-cols-3 lg:gap-y-8 lg:gap-x-6 lg:justify-between"
+            >
+              <div
+                class="card-customer border-2 p-6 lg:flex lg:flex-col lg:gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg"
+              >
+                BPC(Benefício de Prestação Continuada)
+
+                <div class="message-customer">
+                  "A customer testimonial that highlights features and answers
+                  potential customer doubts about your product or service.
+                  Showcase testimonials from a similar demographic to your
+                  customers."
+                </div>
+
+                <div class="info-customer-card lg:flex gap-x-4">
+                  <div class="w-12 h-12 bg-slate-400 rounded-full">
+                    <!-- <img
+                src="./src/images/img-customer.jpg"
+                alt=""
+                style="width: 3rem"
+                class="rounded-full"
+              /> -->
+                  </div>
+
+                  <div class="lg:flex lg:flex-col">
+                    <span><b>Cliente Nome,</b></span>
+                    <span>Profissão, Nome da empresa</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card-customer border-2 p-6 lg:flex lg:flex-col lg:gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg"
+              >
+                BPC(Benefício de Prestação Continuada)
+
+                <div class="message-customer">
+                  "A customer testimonial that highlights features and answers
+                  potential customer doubts about your product or service.
+                  Showcase testimonials from a similar demographic to your
+                  customers."
+                </div>
+
+                <div class="lg:flex gap-x-4">
+                  <div class="w-12 h-12 bg-slate-400 rounded-full">
+                    <!-- <img
+                      src="./src/images/img-customer.jpg"
+                      alt=""
+                      style="width: 3rem"
+                      class="rounded-full"
+                    /> -->
+                  </div>
+
+                  <div class="lg:flex lg:flex-col">
+                    <span><b>Cliente Nome,</b></span>
+                    <span>Profissão, Nome da empresa</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card-customer border-2 p-6 lg:flex lg:flex-col lg:gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg"
+              >
+                BPC(Benefício de Prestação Continuada)
+
+                <div class="message-customer">
+                  "A customer testimonial that highlights features and answers
+                  potential customer doubts about your product or service.
+                  Showcase testimonials from a similar demographic to your
+                  customers."
+                </div>
+
+                <div class="info-customer-card lg:flex gap-x-4">
+                  <div class="w-12 h-12 bg-slate-400 rounded-full">
+                    <!-- <img
+                    src="./src/images/img-customer.jpg"
+                    alt=""
+                    style="width: 3rem"
+                    class="rounded-full"
+                  /> -->
+                  </div>
+
+                  <div class="lg:flex lg:flex-col">
+                    <span><b>Cliente Nome,</b></span>
+                    <span>Profissão, Nome da empresa</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="/src/app.js" defer></script>
