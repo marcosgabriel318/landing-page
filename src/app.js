@@ -17,7 +17,8 @@ menuIcon.addEventListener("click", () => {
     menu.classList.contains("-z-10")
   ) {
     menu.classList.remove("-top-[260px]");
-    menu.classList.add("top-14");
+
+    menu.classList.add("top-14", "bg-[#131313]");
     menu.classList.toggle("-z-10");
   } else {
     menu.classList.remove("top-14");
