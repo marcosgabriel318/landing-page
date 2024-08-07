@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
       rel="stylesheet"
     />
 
@@ -41,14 +48,18 @@
             <a href="#">Início</a>
           </li>
           <li
-            class="py-2 my-1 border-b-2 lg:border-0 lg:hover:border-b-2 lg:hover:ease-out lg:hover:transition-none"
+            class="py-2 my-1 border-b-2 lg:border-0 lg:bg-gradient-to-r lg:hover:from-initial-font lg:hover:from-15% lg:hover:via-middle-font lg:hover:via-25% lg:hover:to-final-font lg:hover:to-90% lg:hover:inline-block lg:hover:text-transparent lg:hover:bg-clip-text lg:hover:border- lg:hover:transition-all lg:ease-in-out"
           >
-            Sobre
+            <a href="#sobre"> Sobre </a>
           </li>
-          <li class="py-2 my-1 border-b-2 lg:border-0">
+          <li
+            class="py-2 my-1 border-b-2 lg:border-0 lg:bg-gradient-to-r lg:hover:from-initial-font lg:hover:from-15% lg:hover:via-middle-font lg:hover:via-25% lg:hover:to-final-font lg:hover:to-90% lg:hover:inline-block lg:hover:text-transparent lg:hover:bg-clip-text lg:hover:border- lg:hover:transition-all lg:ease-in-out"
+          >
             <a href="#servicos">Serviços</a>
           </li>
-          <li class="py-2 my-1">
+          <li
+            class="py-2 my-1 border-b-2 lg:border-0 lg:bg-gradient-to-r lg:hover:from-initial-font lg:hover:from-15% lg:hover:via-middle-font lg:hover:via-25% lg:hover:to-final-font lg:hover:to-90% lg:hover:inline-block lg:hover:text-transparent lg:hover:bg-clip-text lg:hover:border- lg:hover:transition-all lg:ease-in-out"
+          >
             <a href="#depoimentos">Depoimentos</a>
           </li>
           <li class="py-2 my-1">
@@ -62,9 +73,9 @@
       </nav>
     </header>
 
-    <main>
+    <main class="">
       <!-- Section hero main -->
-      <div
+      <section
         class="section-hero h-svh bg-bg-hero bg-cover bg-[-10rem_center] lg:bg-top"
       >
         <!--lg:bg-bg-hero lg:bg-cover lg:bg-top"-->
@@ -90,9 +101,67 @@
             Saiba Mais
           </a>
         </div>
-      </div>
-      <div class="section-hero h-svh bg-white"></div>
+      </section>
 
+      <!-- Section sobre -->
+      <section class="section-about h-svh bg-[#001A2D]" id="sobre">
+        <div class="lg:pt-28 h-full">
+          <div class="lg:mx-36 h-full lg:flex lg:flex-col lg:gap-y-4">
+            <h3
+              class="text-white font-semibold lg:border-white lg:border-l-8 lg:text-3xl lg:pl-6"
+            >
+              Conheça Nosso Escritório
+            </h3>
+
+            <div class="flex h-full pt-6">
+              <div class="w-1/2">
+                <div class="w-full h-min">
+                  <!-- max-h-[35rem] bg-[url('/src/images/officer-inside.jpg')] bg-cover bg-left rounded-lg outline outline-8 m-2 outline-amber-200" -->
+                  <img
+                    src="./src/images/officer-inside.jpg"
+                    alt=""
+                    class="rounded-lg outline outline-8 m-2 outline-amber-200 h-full max-h-[30rem]"
+                  />
+                </div>
+              </div>
+              <div class="w-1/2 pl-12">
+                <span class="text-white text-justify">
+                  <div class="flex justify-center mb-4">
+                    <span
+                      class="icon-[hugeicons--justice-scale-01]"
+                      style="width: 2.5rem; height: 2.5rem"
+                    ></span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Qui id, deleniti beatae in perspiciatis quo voluptates velit
+                    fuga suscipit voluptatibus ipsum pariatur fugiat unde quod,
+                    ea quibusdam, consectetur placeat repellat! Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. Qui id,
+                    deleniti beatae in perspiciatis quo voluptates velit fuga
+                    suscipit voluptatibus ipsum pariatur fugiat unde quod, ea
+                    quibusdam, consectetur placeat repellat!
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Qui id, deleniti beatae in perspiciatis quo voluptates velit
+                    fuga suscipit voluptatibus ipsum pariatur fugiat unde quod,
+                    ea quibusdam, consectetur placeat repellat!
+                  </p>
+                  <div class="flex justify-center mt-6">
+                    <button
+                      class="py-2 px-6 text-xl bg-btn-hero text-black rounded-xl font-semibold"
+                    >
+                      Falar Agora
+                    </button>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Section serviços -->
       <div
         class="section-hero h-svh lg:h-auto bg-[#131313] hidden"
@@ -151,117 +220,7 @@
       </div>
 
       <!-- Section depoimentos -->
-      <div class="section-hero h-svh lg:h-auto bg-white hidden">
-        <div class="lg:py-28 h-full">
-          <div class="lg:mx-36 lg:flex lg:flex-col lg:gap-y-4">
-            <h3 class="lg:border-black lg:border-l-8 lg:text-3xl lg:pl-6">
-              O que nossos clientes dizem?
-            </h3>
-
-            <span class=""
-              >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui id,
-              deleniti beatae in perspiciatis quo voluptates velit fuga suscipit
-              voluptatibus ipsum pariatur fugiat unde quod, ea quibusdam,
-              consectetur placeat repellat!</span
-            >
-          </div>
-
-          <div class="lg:mx-36 lg:my lg:h-full">
-            <div
-              class="list-depoimentos h-5/6 lg:mt-7 lg:grid lg:grid-cols-3 lg:gap-y-8 lg:gap-x-6 lg:justify-between"
-            >
-              <div
-                class="card-customer border-2 p-6 lg:flex lg:flex-col lg:gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg"
-              >
-                BPC(Benefício de Prestação Continuada)
-
-                <div class="message-customer">
-                  "A customer testimonial that highlights features and answers
-                  potential customer doubts about your product or service.
-                  Showcase testimonials from a similar demographic to your
-                  customers."
-                </div>
-
-                <div class="info-customer-card lg:flex gap-x-4">
-                  <div class="w-12 h-12 bg-slate-400 rounded-full">
-                    <!-- <img
-                src="./src/images/img-customer.jpg"
-                alt=""
-                style="width: 3rem"
-                class="rounded-full"
-              /> -->
-                  </div>
-
-                  <div class="lg:flex lg:flex-col">
-                    <span><b>Cliente Nome,</b></span>
-                    <span>Profissão, Nome da empresa</span>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="card-customer border-2 p-6 lg:flex lg:flex-col lg:gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg"
-              >
-                BPC(Benefício de Prestação Continuada)
-
-                <div class="message-customer">
-                  "A customer testimonial that highlights features and answers
-                  potential customer doubts about your product or service.
-                  Showcase testimonials from a similar demographic to your
-                  customers."
-                </div>
-
-                <div class="lg:flex gap-x-4">
-                  <div class="w-12 h-12 bg-slate-400 rounded-full">
-                    <!-- <img
-                      src="./src/images/img-customer.jpg"
-                      alt=""
-                      style="width: 3rem"
-                      class="rounded-full"
-                    /> -->
-                  </div>
-
-                  <div class="lg:flex lg:flex-col">
-                    <span><b>Cliente Nome,</b></span>
-                    <span>Profissão, Nome da empresa</span>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="card-customer border-2 p-6 lg:flex lg:flex-col lg:gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg"
-              >
-                BPC(Benefício de Prestação Continuada)
-
-                <div class="message-customer">
-                  "A customer testimonial that highlights features and answers
-                  potential customer doubts about your product or service.
-                  Showcase testimonials from a similar demographic to your
-                  customers."
-                </div>
-
-                <div class="info-customer-card lg:flex gap-x-4">
-                  <div class="w-12 h-12 bg-slate-400 rounded-full">
-                    <!-- <img
-                    src="./src/images/img-customer.jpg"
-                    alt=""
-                    style="width: 3rem"
-                    class="rounded-full"
-                  /> -->
-                  </div>
-
-                  <div class="lg:flex lg:flex-col">
-                    <span><b>Cliente Nome,</b></span>
-                    <span>Profissão, Nome da empresa</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section-hero lg:h-svh bg-[#131313]" id="depoimentos">
+      <section class="section-testimonials h-svh bg-[#01223C]" id="depoimentos">
         <div class="py-16 lg:py-28 h-full">
           <div class="mx-3 lg:mx-36 flex flex-col gap-y-4">
             <h3
@@ -278,12 +237,12 @@
             >
           </div>
 
-          <div class="mx-3 lg:mx-36 lg:my lg:h-full">
+          <div class="mx-3 lg:mx-36 lg:h-max">
             <div
               class="list-depoimentos h-5/6 mt-7 flex flex-col lg:grid lg:grid-cols-3 gap-y-8 lg:gap-x-6 lg:justify-between"
             >
               <div
-                class="card-customer border-2 p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg rounded-2xl"
+                class="card-customer border-2 h-max p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform rounded-2xl"
               >
                 <div>
                   <span
@@ -333,7 +292,7 @@
               </div>
 
               <div
-                class="card-customer border-2 p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-2xl lg:hover:bg-[#0F2041] rounded-2xl"
+                class="card-customer border-2 h-max p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-2xl lg:hover:bg-[#0F2041] rounded-2xl"
               >
                 <div>
                   <span
@@ -383,7 +342,7 @@
               </div>
 
               <div
-                class="card-customer border-2 p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg rounded-2xl"
+                class="card-customer border-2 h-max p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg rounded-2xl"
               >
                 <div>
                   <span
@@ -434,9 +393,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="section-hero bg-white" id="contato">
+      <!-- Section Contatos -->
+      <section class="section-contact bg-white hidden" id="contato">
         <div class="py-16 lg:py-28 h-full">
           <div class="mx-3 lg:mx-36 flex flex-col gap-y-4">
             <h3
@@ -456,7 +416,7 @@
                 class="h-full border-2 bg-[url('/src/images/01092023-IMG_6697.jpg')] bg-cover bg-[left_-8rem] rounded-xl"
               ></div>
             </div>
-            <div class="w-1/2">
+            <div class="w-1/2 border-2 px-8 py-8 bg-black rounded-xl">
               <form action="" class="w-full flex flex-col gap-4">
                 <input
                   type="text"
@@ -509,8 +469,33 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
+
+    <footer class="h-1/2 bg-[#F7F7F7] text-black">
+      <div class="lg:mx-36 lg:py-12 flex h-full items-center">
+        <div class="w-1/3 h-full">
+          <img src="./src/images/logo preta.png" alt="" style="width: 75%" />
+        </div>
+        <div class="w-full h-full flex">
+          <div class="w-1/2 text-right">
+            <h4 class="text-xl font-semibold">Contato</h4>
+            <div class="flex flex-col">
+              <span>+55 98 98888-8888</span>
+              <span>+55 98 98888-8888</span>
+              <span>contato@email.com</span>
+            </div>
+          </div>
+          <div class="w-1/2 text-right">
+            <h4 class="text-xl font-semibold">Endereço</h4>
+            <div>
+              Av. Lorem Ipsum, 000 <br />Centro - Bom Jesus, PI <br />CEP
+              60140-155
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="/src/app.js" defer></script>
   </body>

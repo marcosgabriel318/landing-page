@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@iconify-json/hugeicons": "^1.1.1",
     "@iconify-json/ic": "^1.1.18",
     "@iconify-json/mingcute": "^1.1.18",
     "@iconify/tailwind": "^1.1.2",
