@@ -7,15 +7,17 @@ document.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
     //header.classList.add("bg-[#131313]/30", "backdrop-blur-md", "shadow-lg");
     header.classList.add(
+      "bg-transparent/5",
       "backdrop-blur-md",
-      "shadow-lg",
-      "backdrop-contrast-90"
+      "shadow-md",
+      "backdrop-contrast-10"
     );
   } else {
     header.classList.remove(
+      "bg-transparent/5",
       "backdrop-blur-md",
-      "shadow-lg",
-      "backdrop-contrast-90"
+      "shadow-md",
+      "backdrop-contrast-10"
     );
   }
 });

@@ -25,7 +25,9 @@
     <header
       class="fixed w-full text-white lg:border-0 transition-all ease-in-out z-10"
     >
-      <nav class="lg:flex lg:justify-between lg:mx-24 xl:mx-36 my-4 xl:my-6">
+      <nav
+        class="lg:flex lg:justify-between lg:mx-24 xl:mx-36 desktop:mx-60 my-4 xl:my-6"
+      >
         <div class="mx-3 lg:mx-0">
           <div class="flex justify-between items-center text-3xl lg:p-0">
             <img
@@ -80,30 +82,35 @@
       >
         <!--lg:bg-bg-hero lg:bg-cover lg:bg-top"-->
         <div
-          class="w-[90%] lg:w-1/2 absolute top-1/3 mx-3 lg:mx-24 xl:mx-36 flex flex-col gap-4 lg:gap-6 lg:z-[1]"
+          class="w-[90%] lg:w-1/2 absolute top-1/3 mx-3 lg:mx-24 xl:mx-36 desktop:mx-60 flex flex-col gap-4 lg:gap-6 desktop:gap-8 lg:z-[1]"
         >
           <h3
-            class="text-[2.4rem] leading-10 lg:flex lg:flex-col lg:text-5xl min-xl:text-7xl lg:leading-[60px] min-xl:leading-[5rem] font-bold bg-gradient-to-r from-initial-font from-15% via-middle-font via-25% to-final-font to-90% text-transparent bg-clip-text"
+            class="text-[2.4rem] leading-10 lg:flex lg:flex-col lg:text-5xl desktop:text-6xl lg:leading-[60px] min-xl:leading-[5rem] font-bold bg-gradient-to-r from-initial-font from-15% via-middle-font via-25% to-final-font to-90% text-transparent bg-clip-text"
           >
             <span>Precisa de Ajuda com</span>
             <span>Benefícios do INSS?</span>
             <span>Estamos aqui para você!</span>
           </h3>
           <span
-            class="text-white text-justify text-xl leading-6 lg:text-[1.2rem] lg:w-3/4"
+            class="text-white text-justify text-xl desktop:text-2xl leading-6 lg:text-[1.2rem] lg:w-3/4"
             >Especialistas em Direito Previdenciário, prontos para ajudar você a
             conquistar seus direitos.
           </span>
 
           <div class="relative cursor-pointer">
             <span
-              class="inline-flex absolute w-36 h-12 rounded-2xl bg-[#36342d] animate-pulse hover:scale-110 lg:transition-transform"
+              class="inline-flex absolute w-36 h-12 desktop:w-44 desktop:h-16 rounded-2xl bg-[#36342d] animate-pulse hover:scale-110 lg:transition-transform"
             ></span>
             <span
-              class="absolute flex justify-center items-center w-36 h-12 rounded-2xl bg-[#D1B96E] hover:scale-110 lg:transition-transform"
+              class="absolute flex justify-center items-center w-36 h-12 desktop:w-44 desktop:h-16 rounded-2xl bg-[#D1B96E] hover:scale-110 lg:transition-transform"
             >
-              <a class="font-semibold lg:text-xl" href="">Saiba Mais</a>
-            </span>
+              <a
+                class="w-36 h-12 flex items-center justify-center font-semibold lg:text-xl desktop:text-2xl"
+                href=""
+              >
+                Saiba Mais
+              </a></span
+            >
           </div>
         </div>
 
@@ -113,16 +120,21 @@
       </section>
 
       <!-- Section sobre -->
-      <section class="section-about h-svh bg-[#0c1a25]" id="sobre">
-        <div class="lg:pt-28 h-full">
-          <div class="lg:mx-36 h-full lg:flex lg:flex-col lg:gap-y-4">
+      <section
+        class="section-about h-svh desktop:max-h-[800px] bg-[#0c1a25]"
+        id="sobre"
+      >
+        <div class="flex flex-col h-full">
+          <div
+            class="lg:mx-36 lg:pt-12 desktop:mx-60 my-auto h-max lg:flex lg:flex-col lg:gap-y-6 desktop:gap-y-12"
+          >
             <h3
-              class="text-white font-semibold lg:border-white lg:border-l-8 lg:text-3xl lg:pl-6"
+              class="text-white font-semibold lg:border-white lg:border-l-8 lg:text-3xl desktop:text-4xl lg:pl-6"
             >
               Conheça Nosso Escritório
             </h3>
 
-            <div class="flex h-full pt-6">
+            <div class="flex h-full justify-center items-center">
               <div class="w-1/2">
                 <div class="w-full h-min">
                   <!-- max-h-[35rem] bg-[url('/src/images/officer-inside.jpg')] bg-cover bg-left rounded-lg outline outline-8 m-2 outline-amber-200" -->
@@ -133,39 +145,234 @@
                   />
                 </div>
               </div>
-              <div class="w-1/2 pl-12">
-                <span class="text-white text-justify">
-                  <div class="flex justify-center mb-4">
+              <div class="w-1/2 h-full pl-12">
+                <span
+                  class="text-white text-justify desktop:text-xl h-full flex flex-col justify-around"
+                >
+                  <div class="flex justify-center">
                     <span
                       class="icon-[hugeicons--justice-scale-01]"
                       style="width: 2.5rem; height: 2.5rem"
                     ></span>
                   </div>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Qui id, deleniti beatae in perspiciatis quo voluptates velit
-                    fuga suscipit voluptatibus ipsum pariatur fugiat unde quod,
-                    ea quibusdam, consectetur placeat repellat! Lorem ipsum
-                    dolor, sit amet consectetur adipisicing elit. Qui id,
-                    deleniti beatae in perspiciatis quo voluptates velit fuga
-                    suscipit voluptatibus ipsum pariatur fugiat unde quod, ea
-                    quibusdam, consectetur placeat repellat!
-                  </p>
+                  <div class="text-apresentation-about">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Qui id, deleniti beatae in perspiciatis quo voluptates
+                      velit fuga suscipit voluptatibus ipsum pariatur fugiat
+                      unde quod, ea quibusdam, consectetur placeat repellat!
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Qui id, deleniti beatae in perspiciatis quo voluptates
+                      velit fuga suscipit voluptatibus ipsum pariatur fugiat
+                      unde quod, ea quibusdam, consectetur placeat repellat!
+                    </p>
 
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Qui id, deleniti beatae in perspiciatis quo voluptates velit
-                    fuga suscipit voluptatibus ipsum pariatur fugiat unde quod,
-                    ea quibusdam, consectetur placeat repellat!
-                  </p>
-                  <div class="flex justify-center mt-6">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Qui id, deleniti beatae in perspiciatis quo voluptates
+                      velit fuga suscipit voluptatibus ipsum pariatur fugiat
+                      unde quod, ea quibusdam, consectetur placeat repellat!
+                    </p>
+                  </div>
+                  <div class="flex justify-center">
                     <button
-                      class="py-2 px-6 text-xl bg-btn-hero text-black rounded-xl font-semibold"
+                      class="py-2 px-6 text-xl desktop:text-2xl bg-btn-hero text-black rounded-xl font-semibold"
                     >
                       Falar Agora
                     </button>
                   </div>
                 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section depoimentos -->
+      <section
+        class="section-testimonials h-svh desktop:max-h-[800px] bg-[#0c1a25]"
+        id="depoimentos"
+      >
+        <div class="flex flex-col h-full">
+          <div
+            class="lg:mx-36 lg:pt-12 desktop:pt-10 desktop:min-h-[632px] desktop:mx-60 my-auto h-max lg:flex lg:flex-col lg:gap-y-6 desktop:gap-y-12"
+          >
+            <div class="flex flex-col gap-y-4 desktop:gap-y-4">
+              <h3
+                class="text-white font-semibold lg:border-white lg:border-l-8 lg:text-3xl desktop:text-4xl lg:pl-6"
+              >
+                O que nossos clientes dizem?
+              </h3>
+
+              <span class="text-white desktop:text-xl"
+                >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                id, deleniti beatae in perspiciatis quo voluptates velit fuga
+                suscipit voluptatibus ipsum pariatur fugiat unde quod, ea
+                quibusdam, consectetur placeat repellat!
+              </span>
+            </div>
+
+            <div
+              class="flex h-full justify-center items-center desktop:text-xl"
+            >
+              <div class="mx-3 lg:mx-0 lg:0 lg:h-max">
+                <div
+                  class="list-depoimentos h-5/6 mt-7 flex flex-col lg:grid lg:grid-cols-3 gap-y-6 lg:gap-x-6 lg:justify-between"
+                >
+                  <div
+                    class="card-customer border-2 h-max lg:min-h-[322px] p-6 flex flex-col justify-around desktop:gap-y-8 lg:hover:scale-110 lg:transition-transform lg:hover:bg-[#0F2041] rounded-2xl"
+                  >
+                    <div class="avaliation min-h-[142px]">
+                      <div class="stars-avaliation">
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                      </div>
+
+                      <div class="message-customer text-white lg:text-xl">
+                        "Atendimento maravilhoso! Lugar que a gente se sente bem
+                        atendido. Estão de parabéns e nota 10!!!"
+                      </div>
+                    </div>
+
+                    <div class="info-customer-card items-center flex gap-x-4">
+                      <img
+                        class="w-12 h-12"
+                        src="/src/images/cliente-01.png"
+                        alt=""
+                      />
+                      <div
+                        class="hidden w-12 h-12 desktop:w-14 desktop:h-14 bg-slate-400 rounded-full"
+                      >
+                        <!-- <img
+                    src="./src/images/img-customer.jpg"
+                    alt=""
+                    style="width: 3rem"
+                    class="rounded-full"
+                  /> -->
+                      </div>
+
+                      <div class="flex flex-col text-white">
+                        <span><b>Luanna Araujo,</b></span>
+                        <span>Profissão, Nome da empresa</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="card-customer border-2 h-max lg:min-h-[322px] p-6 flex flex-col justify-around desktop:gap-y-8 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-2xl lg:hover:bg-[#0F2041] rounded-2xl"
+                  >
+                    <div class="avaliation min-h-[142px]">
+                      <div>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                      </div>
+                      <div class="message-customer text-white lg:text-xl">
+                        "Melhor escritório de advocacia previdenciária,
+                        atendimento nota 10 profissionais totalmente
+                        comprometidos."
+                      </div>
+                    </div>
+
+                    <div class="info-customer-card items-center flex gap-x-4">
+                      <img
+                        class="w-12 h-12"
+                        src="/src/images/cliente-02.png"
+                        alt=""
+                      />
+                      <div class="flex flex-col text-white">
+                        <span><b>Diomara Aline,</b></span>
+                        <span>Profissão, Nome da empresa</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="card-customer border-2 h-max lg:min-h-[322px] p-6 flex flex-col justify-around desktop:gap-y-8 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg lg:hover:bg-[#0F2041] rounded-2xl"
+                  >
+                    <div class="avaliation min-h-[142px]">
+                      <div>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                        <span
+                          class="icon-[ic--sharp-star]"
+                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                        ></span>
+                      </div>
+
+                      <div
+                        class="message-customer text-white desktop:min-h-[84px] lg:text-xl"
+                      >
+                        "Local maravilhoso, atendimento excelente. Profissionais
+                        de ótima qualidade 👏👏👏"
+                      </div>
+                    </div>
+
+                    <div class="info-customer-card items-center flex gap-x-4">
+                      <!-- <div class="w-12 h-12 bg-slate-400 rounded-full">
+                      </div> -->
+                      <img
+                        src="./src/images/img-customer.jpg"
+                        alt=""
+                        class="w-12 h-12 rounded-full"
+                      />
+
+                      <div class="flex flex-col text-white">
+                        <span><b>Deyverson,</b></span>
+                        <span>Profissão, Nome da empresa</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -177,7 +384,7 @@
         id="servicos"
       >
         <div class="lg:py-28 h-full">
-          <div class="lg:mx-36 lg:flex lg:flex-col lg:gap-y-4">
+          <div class="lg:mx-36 desktop:mx-60 lg:flex lg:flex-col lg:gap-y-4">
             <h3
               class="text-white lg:border-white lg:border-l-8 lg:text-3xl lg:pl-6"
             >
@@ -229,173 +436,178 @@
       </div>
 
       <!-- Section depoimentos -->
-      <section class="section-testimonials h-svh bg-[#0c1a25]" id="depoimentos">
-        <div class="py-16 lg:py-28 h-full">
-          <div class="mx-3 lg:mx-36 flex flex-col gap-y-4">
-            <h3
-              class="border-white border-l-4 lg:border-l-8 text-2xl lg:text-3xl pl-2 lg:pl-6 text-white font-semibold"
-            >
-              O que nossos clientes dizem?
-            </h3>
-
-            <span class="text-white"
-              >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui id,
-              deleniti beatae in perspiciatis quo voluptates velit fuga suscipit
-              voluptatibus ipsum pariatur fugiat unde quod, ea quibusdam,
-              consectetur placeat repellat!</span
-            >
-          </div>
-
-          <div class="mx-3 lg:mx-36 lg:h-max">
-            <div
-              class="list-depoimentos h-5/6 mt-7 flex flex-col lg:grid lg:grid-cols-3 gap-y-8 lg:gap-x-6 lg:justify-between"
-            >
-              <div
-                class="card-customer border-2 h-max p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform rounded-2xl"
+      <section
+        class="hidden section-testimonials h-svh desktop:max-h-[800px] bg-[#0c1a25]"
+        id="depoimentos"
+      >
+        <div class="flex flex-col h-full">
+          <div class="my-auto flex flex-col items-center justify-center h-max">
+            <div class="mx-3 lg:mx-36 desktop:mx-60 flex flex-col gap-y-4">
+              <h3
+                class="border-white border-l-4 lg:border-l-8 text-2xl lg:text-3xl desktop:text-4xl pl-2 lg:pl-6 text-white font-semibold"
               >
-                <div>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                </div>
+                O que nossos clientes dizem?
+              </h3>
 
-                <div class="message-customer text-white">
-                  "A customer testimonial that highlights features and answers
-                  potential customer doubts about your product or service.
-                  Showcase testimonials from a similar demographic to your
-                  customers."
-                </div>
+              <span class="text-white desktop:text-xl"
+                >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                id, deleniti beatae in perspiciatis quo voluptates velit fuga
+                suscipit voluptatibus ipsum pariatur fugiat unde quod, ea
+                quibusdam, consectetur placeat repellat!</span
+              >
+            </div>
 
-                <div class="info-customer-card flex gap-x-4">
-                  <div class="w-12 h-12 bg-slate-400 rounded-full">
-                    <!-- <img
-                src="./src/images/img-customer.jpg"
-                alt=""
-                style="width: 3rem"
-                class="rounded-full"
-              /> -->
+            <div class="mx-3 lg:mx-36 desktop:mx-60 lg:h-max">
+              <div
+                class="list-depoimentos h-5/6 mt-7 flex flex-col lg:grid lg:grid-cols-3 gap-y-8 lg:gap-x-6 lg:justify-between"
+              >
+                <div
+                  class="card-customer border-2 h-max p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform rounded-2xl"
+                >
+                  <div>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
                   </div>
 
-                  <div class="flex flex-col text-white">
-                    <span><b>Cliente Nome,</b></span>
-                    <span>Profissão, Nome da empresa</span>
+                  <div class="message-customer text-white">
+                    "A customer testimonial that highlights features and answers
+                    potential customer doubts about your product or service.
+                    Showcase testimonials from a similar demographic to your
+                    customers."
+                  </div>
+
+                  <div class="info-customer-card flex gap-x-4">
+                    <div class="w-12 h-12 bg-slate-400 rounded-full">
+                      <!-- <img
+                  src="./src/images/img-customer.jpg"
+                  alt=""
+                  style="width: 3rem"
+                  class="rounded-full"
+                /> -->
+                    </div>
+
+                    <div class="flex flex-col text-white">
+                      <span><b>Cliente Nome,</b></span>
+                      <span>Profissão, Nome da empresa</span>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div
-                class="card-customer border-2 h-max p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-2xl lg:hover:bg-[#0F2041] rounded-2xl"
-              >
-                <div>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
+                <div
+                  class="card-customer border-2 h-max p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-2xl lg:hover:bg-[#0F2041] rounded-2xl"
+                >
+                  <div>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                  </div>
+
+                  <div class="message-customer text-white">
+                    "A customer testimonial that highlights features and answers
+                    potential customer doubts about your product or service.
+                    Showcase testimonials from a similar demographic to your
+                    customers."
+                  </div>
+
+                  <div class="flex gap-x-4">
+                    <div class="w-12 h-12 bg-slate-400 rounded-full">
+                      <!-- <img
+                        src="./src/images/img-customer.jpg"
+                        alt=""
+                        style="width: 3rem"
+                        class="rounded-full"
+                      /> -->
+                    </div>
+
+                    <div class="flex flex-col text-white">
+                      <span><b>Cliente Nome,</b></span>
+                      <span>Profissão, Nome da empresa</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="message-customer text-white">
-                  "A customer testimonial that highlights features and answers
-                  potential customer doubts about your product or service.
-                  Showcase testimonials from a similar demographic to your
-                  customers."
-                </div>
+                <div
+                  class="card-customer border-2 h-max p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg rounded-2xl"
+                >
+                  <div>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                    <span
+                      class="icon-[ic--sharp-star]"
+                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
+                    ></span>
+                  </div>
 
-                <div class="flex gap-x-4">
-                  <div class="w-12 h-12 bg-slate-400 rounded-full">
-                    <!-- <img
+                  <div class="message-customer text-white">
+                    "A customer testimonial that highlights features and answers
+                    potential customer doubts about your product or service.
+                    Showcase testimonials from a similar demographic to your
+                    customers."
+                  </div>
+
+                  <div class="info-customer-card flex gap-x-4">
+                    <div class="w-12 h-12 bg-slate-400 rounded-full">
+                      <!-- <img
                       src="./src/images/img-customer.jpg"
                       alt=""
                       style="width: 3rem"
                       class="rounded-full"
                     /> -->
-                  </div>
+                    </div>
 
-                  <div class="flex flex-col text-white">
-                    <span><b>Cliente Nome,</b></span>
-                    <span>Profissão, Nome da empresa</span>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="card-customer border-2 h-max p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg rounded-2xl"
-              >
-                <div>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                  <span
-                    class="icon-[ic--sharp-star]"
-                    style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                  ></span>
-                </div>
-
-                <div class="message-customer text-white">
-                  "A customer testimonial that highlights features and answers
-                  potential customer doubts about your product or service.
-                  Showcase testimonials from a similar demographic to your
-                  customers."
-                </div>
-
-                <div class="info-customer-card flex gap-x-4">
-                  <div class="w-12 h-12 bg-slate-400 rounded-full">
-                    <!-- <img
-                    src="./src/images/img-customer.jpg"
-                    alt=""
-                    style="width: 3rem"
-                    class="rounded-full"
-                  /> -->
-                  </div>
-
-                  <div class="flex flex-col text-white">
-                    <span><b>Cliente Nome,</b></span>
-                    <span>Profissão, Nome da empresa</span>
+                    <div class="flex flex-col text-white">
+                      <span><b>Cliente Nome,</b></span>
+                      <span>Profissão, Nome da empresa</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -481,7 +693,7 @@
       </section>
     </main>
 
-    <footer class="h-1/2 bg-[#F7F7F7] text-black">
+    <footer class="h-1/2 bg-black text-white">
       <div class="lg:mx-36 lg:py-12 flex h-full items-center">
         <div class="w-1/3 h-full">
           <img src="./src/images/logo preta.png" alt="" style="width: 75%" />
