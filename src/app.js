@@ -5,9 +5,18 @@ const header = document.querySelector("header");
 
 document.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
-    header.classList.add("bg-[#131313]");
+    //header.classList.add("bg-[#131313]/30", "backdrop-blur-md", "shadow-lg");
+    header.classList.add(
+      "backdrop-blur-md",
+      "shadow-lg",
+      "backdrop-contrast-90"
+    );
   } else {
-    header.classList.remove("bg-[#131313]");
+    header.classList.remove(
+      "backdrop-blur-md",
+      "shadow-lg",
+      "backdrop-contrast-90"
+    );
   }
 });
 
