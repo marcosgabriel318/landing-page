@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+  }
+
+  .scroller[data-animated="true"]::before,
+  .scroller[data-animated="true"]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 20%; /* Ajuste conforme necessário */
+    pointer-events: none; /* Faz com que o gradiente não interfira na interação */
+    z-index: 10; /* Coloca os gradientes acima do conteúdo */
+  }
+
+  .scroller[data-animated="true"]::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(12, 26, 37, 0.9), transparent);
+  }
+
+  .scroller[data-animated="true"]::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(12, 26, 37, 0.9), transparent);
+  }
+
+  .scroller[data-animated="true"] .scroller-inner {
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+
+  .scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+
+  .scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+  }
+
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+  }
+
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 40s;
+  }
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}

@@ -28,6 +28,9 @@ module.exports = {
           "0%": { "box-shadow": "0 0 0 0 #D1B96E" },
           "100%": { "box-shadow": "0 0 0 14px #D1B96E00" },
         },
+        scroll: {
+          to: { transform: "translate(calc(-50% - 0.5rem))" },
+        },
       },
       animation: {
         buttonPulse: "pulse 1.5s infinite ease-in-out",

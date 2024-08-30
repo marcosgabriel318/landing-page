@@ -2,6 +2,7 @@ const menuIcon = document.querySelector(".menu-icon");
 const menu = document.querySelector(".menu");
 const body = document.querySelector("body");
 const header = document.querySelector("header");
+const scrollers = document.querySelectorAll(".scroller");
 
 document.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
@@ -37,3 +38,20 @@ menuIcon.addEventListener("click", () => {
     menu.classList.toggle("-z-10");
   }
 });
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    scroller.setAttribute("data-animated", true);
+
+    const scrollerInner = scroller.querySelector(".scroller-inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
+
+addAnimation();
