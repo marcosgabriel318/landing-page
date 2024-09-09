@@ -4,6 +4,14 @@ const body = document.querySelector("body");
 const header = document.querySelector("header");
 const scrollers = document.querySelectorAll(".scroller");
 
+const imgs = document.querySelector("#img");
+const imgElems = document.querySelectorAll("#img img");
+
+const totalImgs = imgElems.length * 2; // Contar as imagens duplicadas
+let posInicial = 0;
+const intervalDuration = 5000; // Intervalo de troca (5 segundos)
+const transitionDuration = 1000; // Duração da transição (1 segundo)
+
 document.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
     //header.classList.add("bg-[#131313]/30", "backdrop-blur-md", "shadow-lg");
@@ -53,5 +61,27 @@ function addAnimation() {
     });
   });
 }
+
+//Clonar as imagens e adicionar ao final do contêiner
+imgElems.forEach((img) => {
+  const clonedImg = img.cloneNode(true);
+  imgs.appendChild(clonedImg);
+});
+
+function atualizarCarrossel() {
+  posInicial++;
+  imgs.style.transition = `transform ${transitionDuration}ms ease`;
+  imgs.style.transform = `translateX(${-posInicial * 100}%)`;
+
+  if (posInicial >= imgElems.length) {
+    setTimeout(() => {
+      imgs.style.transition = "none"; // Remove transição para o reset
+      imgs.style.transform = `translateX(0)`;
+      posInicial = 0;
+    }, transitionDuration);
+  }
+}
+
+setInterval(atualizarCarrossel, intervalDuration);
 
 addAnimation();

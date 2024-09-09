@@ -46,6 +46,10 @@ module.exports = {
         "logo-header": "url('/src/images/logo_dourada.png')",
         "bg-hero": "url('/src/images/background-hero-edited-azul.jpg')",
       },
+      boxShadow: {
+        "img-slider-inner":
+          "box-shadow: -3px -4px 65px -4px rgba(0,0,0,0.8) inset;",
+      },
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
       },
