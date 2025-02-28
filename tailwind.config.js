@@ -44,11 +44,12 @@ module.exports = {
       },
       backgroundImage: {
         "logo-header": "url('/src/images/logo_dourada.png')",
-        "bg-hero": "url('/src/images/background-hero-edited-azul.jpg')",
+        "bg-hero": "url('/src/images/bg-hero2.png')",
       },
       boxShadow: {
         "img-slider-inner":
           "box-shadow: -3px -4px 65px -4px rgba(0,0,0,0.8) inset;",
+        "custom-dark": "0 -1px 30px -8px rgba(0, 0, 0, 0.2)",
       },
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],

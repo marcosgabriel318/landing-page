@@ -82,6 +82,31 @@ function atualizarCarrossel() {
   }
 }
 
+// const slider = document.getElementById("slider");
+// const slides = Array.from(slider.children);
+// const speed = 25; // Ajuste a velocidade do carrossel
+// document.documentElement.style.setProperty("--speed", speed + "s");
+
+// // Duplica os slides apenas uma vez para efeito infinito
+// slides.forEach((slide) => {
+//   let clone = slide.cloneNode(true);
+//   slider.appendChild(clone);
+// });
+
+
+const slider = document.getElementById("slider");
+const slides = Array.from(slider.children);
+const speed = 25; // Ajuste a velocidade do carrossel
+document.documentElement.style.setProperty("--speed", speed + "s");
+
+// Duplica os slides duas vezes para efeito infinito
+slides.forEach((slide) => {
+  let clone1 = slide.cloneNode(true);
+  let clone2 = slide.cloneNode(true);
+  slider.appendChild(clone1);
+  slider.appendChild(clone2);
+});
+
 setInterval(atualizarCarrossel, intervalDuration);
 
 addAnimation();

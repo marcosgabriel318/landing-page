@@ -34,12 +34,12 @@
 
   .scroller[data-animated="true"]::before {
     left: 0;
-    background: linear-gradient(to right, rgba(12, 26, 37, 0.9), transparent);
+    background: linear-gradient(to right, rgba(31, 58, 103, 0.9), transparent);
   }
 
   .scroller[data-animated="true"]::after {
     right: 0;
-    background: linear-gradient(to left, rgba(12, 26, 37, 0.9), transparent);
+    background: linear-gradient(to left, rgba(31, 58, 103, 0.9), transparent);
   }
 
   .scroller[data-animated="true"] .scroller-inner {
@@ -68,6 +68,30 @@
   @keyframes scroll {
     to {
       transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+
+  .slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  .slider {
+    display: flex;
+    width: max-content;
+    animation: scroll_img var(--speed) linear infinite;
+  }
+  .slide {
+    width: 200px;
+  }
+
+  @keyframes scroll_img {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
     }
   }
 }

@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/src/output.css" />
   </head>
   <body class="font-custom overflow-x-hidden">
@@ -115,7 +115,7 @@
         </div>
 
         <div
-          class="h-full w-full bg-gradient-to-t from-[#0c1a25] from-2% to-transparent to-65%"
+          class="h-full w-full bg-gradient-to-t from-[#1F3A67] from-2% to-transparent to-65%"
         ></div>
 
         <div
@@ -125,42 +125,42 @@
         >
           <ul class="scroller-inner flex gap-4 flex-wrap box-border">
             <li
-              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-500/10 backdrop-blur-lg backdrop-contrast-30 relative"
+              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-300/10 backdrop-contrast-30"
             >
               BPC
             </li>
             <li
-              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-500/10 backdrop-blur-lg backdrop-contrast-30"
+              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-300/10 backdrop-contrast-30"
             >
               Auxílio Doença
             </li>
             <li
-              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-500/10 backdrop-blur-lg backdrop-contrast-30"
+              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-300/10 backdrop-contrast-30"
             >
               Aposentadoria Rural
             </li>
             <li
-              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-500/10 backdrop-blur-lg backdrop-contrast-30"
+              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-300/10 backdrop-contrast-30"
             >
               Aposentadoria por Tempo de Contribuição
             </li>
             <li
-              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-500/10 backdrop-blur-lg backdrop-contrast-30"
+              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-300/10 backdrop-contrast-30"
             >
               Aposentadoria por Invalidez
             </li>
             <li
-              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-500/10 backdrop-blur-lg backdrop-contrast-30"
+              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-300/10 backdrop-contrast-30"
             >
               Pensão por Morte
             </li>
             <li
-              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-500/10 backdrop-blur-lg backdrop-contrast-30"
+              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-300/10 backdrop-contrast-30"
             >
               Seguro Defeso
             </li>
             <li
-              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-500/10 backdrop-blur-lg backdrop-contrast-30"
+              class="py-4 px-6 lg:py-6 lg:px-8 rounded-xl shadow-lg bg-slate-300/10 backdrop-contrast-30"
             >
               Salário Maternidade
             </li>
@@ -170,12 +170,12 @@
 
       <!-- Section sobre -->
       <section
-        class="section-about lg:h-svh h-max desktop:max-h-[800px] bg-[#0c1a25]"
-        id="sobre"
+        class="section-about h-max desktop:max-h-[800px] bg-[#1F3A67] flex flex-col gap-24"
       >
-        <div class="flex flex-col h-full">
+        <div class="flex flex-col h-full justify-center" id="sobre">
           <div
-            class="relative mx-3 lg:mx-36 lg:pt-12 desktop:mx-60 my-auto h-max flex flex-col lg:gap-y-6 desktop:gap-y-12"
+            class="relative mx-3 lg:mx-36 lg:pt-28 desktop:mx-60 my-auto h-max flex flex-col lg:gap-y-6 desktop:gap-y-12"
+            id="sobre"
           >
             <h3
               class="text-white font-semibold lg:border-white lg:border-l-8 lg:text-3xl desktop:text-4xl lg:pl-6"
@@ -184,10 +184,12 @@
             </h3>
 
             <div
-              class="flex h-full flex-col lg:flex-row justify-center items-center"
+              class="flex h-full flex-col lg:flex-row justify-between items-center"
             >
               <div
-                class="lg:w-1/2 w-full lg:left-0 overflow-hidden rounded-lg outline outline-8 lg:m-2 outline-amber-200"
+                class="lg:w-5/12 w-full lg:left-0 overflow-hidden rounded-lg outline outline-8 lg:m-2 outline-amber-200"
+                data-aos="fade-right"
+                data-aos-duration="1000"
               >
                 <div
                   class="images-slider w-full flex h-full lg:max-h-[25rem] desktop:max-h-[35rem]"
@@ -205,16 +207,13 @@
                     class="w-screen object-cover object-left saturate-150"
                   />
                 </div>
-
-                <div class="text-white absolute mt-6 w-1/2 flex justify-center">
-                  <div class="flex w-max gap-1">
-                    <span class="h-4 w-4 rounded-full bg-slate-400"></span>
-                    <span class="h-4 w-4 rounded-full bg-slate-600"></span>
-                  </div>
-                </div>
               </div>
 
-              <div class="lg:w-1/2 h-full lg:pl-12">
+              <div
+                class="lg:w-1/2 h-full"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
                 <span
                   class="text-white text-justify desktop:text-xl h-full flex flex-col justify-around"
                 >
@@ -243,7 +242,7 @@
                       unde quod, ea quibusdam, consectetur placeat repellat!
                     </p>
                   </div>
-                  <div class="flex justify-center">
+                  <div class="flex">
                     <button
                       class="py-2 px-6 text-xl desktop:text-2xl bg-btn-hero text-black rounded-xl font-semibold"
                     >
@@ -255,11 +254,225 @@
             </div>
           </div>
         </div>
+
+        <div class="flex flex-col h-full">
+          <img src="./src/images/equipe.png" alt="" />
+        </div>
+      </section>
+
+      <!-- Section serviços -->
+      <section class="section-hero h-svh lg:h-auto bg-[#F7F7F7]" id="servicos">
+        <div class="lg:py-28 h-full">
+          <div class="lg:mx-36 desktop:mx-60 lg:flex lg:flex-col lg:gap-y-4">
+            <h3
+              class="text-[#B6781E] font-semibold lg:border-[#B6781E] lg:border-l-8 lg:text-3xl lg:pl-6"
+            >
+              Nossos Serviços
+            </h3>
+
+            <span class="text-black text-lg font-semibold"
+              >Somos especializados em direito previdenciário e atuamos de forma
+              ágil e precisa com uma gama de serviços. Conheça abaixo um pouco
+              mais da nossa atuação:</span
+            >
+          </div>
+
+          <div class="text-black lg:mx-36 desktop:mx-60 lg:h-full">
+            <div class="list-services h-5/6 mt-8 lg:flex lg:flex-col lg:gap-6">
+              <div class="lg:flex lg:w-full lg:gap-6">
+                <div
+                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                >
+                  <div class="bg-[#3c6bb9] rounded-full w-min flex">
+                    <span
+                      class="icon-[mdi--wheelchair] justify-center"
+                      style="width: 80px; height: 80px; color: #fff"
+                    ></span>
+                  </div>
+                  <h3
+                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                  >
+                    BPC
+                  </h3>
+
+                  <p>
+                    Auxílio do governo brasileiro para idosos acima de 65 anos e
+                    pessoas com deficiência sem meios de se sustentar.
+                  </p>
+                </div>
+                <div
+                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                >
+                  <div class="bg-[#3c6bb9] rounded-full w-min flex">
+                    <span
+                      class="icon-[cil--pregnant] justify-center m-[0.15625rem]"
+                      style="width: 75px; height: 75px; color: #fff"
+                    ></span>
+                    <!--<span
+                      class="icon-[mdi--wheelchair] justify-center"
+                      style="width: 80px; height: 80px; color: #fff"
+                    ></span>-->
+                  </div>
+                  <h3
+                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                  >
+                    Salário Maternidade
+                  </h3>
+
+                  <p>
+                    Benefício do INSS para seguradas na licença-maternidade,
+                    válido em casos de parto, adoção, guarda judicial ou aborto
+                    não criminoso.
+                  </p>
+                </div>
+                <div
+                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                >
+                  <div class="bg-[#3c6bb9] rounded-full w-min flex">
+                    <span
+                      class="icon-[iconoir--fishing] justify-center m-[0.3125rem]"
+                      style="width: 70px; height: 70px; color: #fff"
+                    ></span>
+                  </div>
+                  <h3
+                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                  >
+                    Seguro Defeso
+                  </h3>
+
+                  <p>
+                    O Seguro Defeso é um benefício temporário para pescadores
+                    artesanais durante o período de defeso.
+                  </p>
+                </div>
+              </div>
+
+              <div class="lg:flex lg:w-full lg:gap-6">
+                <div
+                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                >
+                  <div class="bg-[#3c6bb9] rounded-full w-min flex">
+                    <span
+                      class="icon-[mdi--patient] justify-center m-[0.3125rem]"
+                      style="width: 70px; height: 70px; color: #fff"
+                    ></span>
+                  </div>
+                  <h3
+                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                  >
+                    Auxílio Doença
+                  </h3>
+
+                  <p>
+                    É um benefício previdenciário pago ao segurado que, por
+                    doença ou acidente, esteja temporariamente incapacitado para
+                    o trabalho.
+                  </p>
+                </div>
+                <div
+                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                >
+                  <div class="bg-[#3c6bb9] rounded-full w-min flex">
+                    <span
+                      class="icon-[fa6-solid--tractor] justify-center m-[0.46875rem]"
+                      style="width: 65px; height: 65px; color: #fff"
+                    ></span>
+                  </div>
+                  <h3
+                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                  >
+                    Aposentadoria Rural
+                  </h3>
+
+                  <p>
+                    Benefício é concedido para trabalhadores rurais, podendo ser
+                    solicitada por idade (55 anos para mulheres e 60 anos para
+                    homens) ou tempo de contribuição.
+                  </p>
+                </div>
+                <div
+                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                >
+                  <div class="bg-[#3c6bb9] rounded-full w-min flex">
+                    <span
+                      class="icon-[mdi--bell-outline] justify-center m-[0.46875rem]"
+                      style="width: 65px; height: 65px; color: #fff"
+                    ></span>
+                  </div>
+                  <h3
+                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                  >
+                    Pensão por Morte
+                  </h3>
+
+                  <p>
+                    É um benefício pago aos dependentes do segurado falecido,
+                    com valor e duração variáveis conforme o tempo de
+                    contribuição e a idade do dependente.
+                  </p>
+                </div>
+              </div>
+
+              <div class="lg:flex lg:w-full lg:gap-6 lg:justify-center">
+                <div
+                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                >
+                  <div class="bg-[#3c6bb9] rounded-full w-min flex">
+                    <span
+                      class="icon-[lineicons--hand-taking-dollar] justify-center m-[0.46875rem]"
+                      style="width: 65px; height: 65px; color: #fff"
+                    ></span>
+                  </div>
+                  <h3
+                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                  >
+                    Aposentadoria por Invalidez
+                  </h3>
+
+                  <p>
+                    Benefício concedido ao segurado incapaz para o trabalho,
+                    após avaliação médica do INSS e, se necessário, comprovação
+                    de carência.
+                  </p>
+                </div>
+                <div
+                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                >
+                  <div class="bg-[#3c6bb9] rounded-full w-min flex">
+                    <span
+                      class="icon-[fa6-solid--business-time] justify-center m-[0.46875rem]"
+                      style="width: 65px; height: 65px; color: #fff"
+                    ></span>
+                  </div>
+                  <h3
+                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                  >
+                    Aposentadoria por Tempo de Contribuição
+                  </h3>
+
+                  <p>
+                    Benefício concedido para quem completou 35 anos (homens) ou
+                    30 anos (mulheres) de contribuição, sem idade mínima, mas
+                    com possível impacto do fator previdenciário.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex lg:justify-center lg:mt-8">
+            <button
+              class="py-4 px-16 text-xl desktop:text-2xl bg-[#06C10C] text-white rounded-xl font-semibold shadow-lg"
+            >
+              Solicitar Agora
+            </button>
+          </div>
+        </div>
       </section>
 
       <!-- Section depoimentos -->
       <section
-        class="section-testimonials h-max lg:h-svh desktop:max-h-[800px] bg-[#0c1a25]"
+        class="section-testimonials h-max lg:h-svh desktop:max-h-[800px] bg-[#1F3A67]"
         id="depoimentos"
       >
         <div class="flex flex-col h-full">
@@ -268,415 +481,54 @@
           >
             <div class="flex flex-col gap-y-4 desktop:gap-y-4">
               <h3
-                class="text-white font-semibold lg:border-white lg:border-l-8 lg:text-3xl desktop:text-4xl lg:pl-6"
+                class="text-[#DFA948] font-semibold lg:border-[#DFA948] lg:border-l-8 lg:text-3xl desktop:text-4xl lg:pl-6"
               >
                 O que nossos clientes dizem?
               </h3>
 
               <span class="text-white desktop:text-xl"
-                >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-                id, deleniti beatae in perspiciatis quo voluptates velit fuga
-                suscipit voluptatibus ipsum pariatur fugiat unde quod, ea
-                quibusdam, consectetur placeat repellat!
+                >Somos especializados em direito previdenciário e atuamos de
+                forma ágil e precisa com uma gama de serviços. Conheça abaixo um
+                pouco mais da nossa atuação:
               </span>
             </div>
 
             <div
-              class="flex h-full justify-center items-center desktop:text-xl"
+              class="flex h-full justify-center items-center desktop:text-xl lg:overflow-hidden"
             >
-              <div class="mx-3 lg:mx-0 lg:0 lg:h-max">
-                <div
-                  class="list-depoimentos h-5/6 mt-7 flex flex-col lg:grid lg:grid-cols-3 gap-y-6 lg:gap-x-6 lg:justify-between"
-                >
-                  <div
-                    class="card-customer border-2 h-max lg:min-h-[322px] p-6 flex flex-col justify-around desktop:gap-y-8 lg:hover:scale-110 lg:transition-transform lg:hover:bg-[#0F2041] rounded-2xl"
-                  >
-                    <div class="avaliation min-h-[142px]">
-                      <div class="stars-avaliation">
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                      </div>
-
-                      <div class="message-customer text-white lg:text-xl">
-                        "Atendimento maravilhoso! Lugar que a gente se sente bem
-                        atendido. Estão de parabéns e nota 10!!!"
-                      </div>
-                    </div>
-
-                    <div class="info-customer-card items-center flex gap-x-4">
-                      <img
-                        class="w-12 h-12"
-                        src="/src/images/cliente-01.png"
-                        alt=""
-                      />
-                      <div
-                        class="hidden w-12 h-12 desktop:w-14 desktop:h-14 bg-slate-400 rounded-full"
-                      >
-                        <!-- <img
-                    src="./src/images/img-customer.jpg"
-                    alt=""
-                    style="width: 3rem"
-                    class="rounded-full"
-                  /> -->
-                      </div>
-
-                      <div class="flex flex-col text-white">
-                        <span><b>Luanna Araujo,</b></span>
-                        <span>Profissão, Nome da empresa</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-customer border-2 h-max lg:min-h-[322px] p-6 flex flex-col justify-around desktop:gap-y-8 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-2xl lg:hover:bg-[#0F2041] rounded-2xl"
-                  >
-                    <div class="avaliation min-h-[142px]">
-                      <div>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                      </div>
-                      <div class="message-customer text-white lg:text-xl">
-                        "Melhor escritório de advocacia previdenciária,
-                        atendimento nota 10 profissionais totalmente
-                        comprometidos."
-                      </div>
-                    </div>
-
-                    <div class="info-customer-card items-center flex gap-x-4">
-                      <img
-                        class="w-12 h-12"
-                        src="/src/images/cliente-02.png"
-                        alt=""
-                      />
-                      <div class="flex flex-col text-white">
-                        <span><b>Diomara Aline,</b></span>
-                        <span>Profissão, Nome da empresa</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-customer border-2 h-max lg:min-h-[322px] p-6 flex flex-col justify-around desktop:gap-y-8 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg lg:hover:bg-[#0F2041] rounded-2xl"
-                  >
-                    <div class="avaliation min-h-[142px]">
-                      <div>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                        <span
-                          class="icon-[ic--sharp-star]"
-                          style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                        ></span>
-                      </div>
-
-                      <div
-                        class="message-customer text-white desktop:min-h-[84px] lg:text-xl"
-                      >
-                        "Local maravilhoso, atendimento excelente. Profissionais
-                        de ótima qualidade 👏👏👏"
-                      </div>
-                    </div>
-
-                    <div class="info-customer-card items-center flex gap-x-4">
-                      <!-- <div class="w-12 h-12 bg-slate-400 rounded-full">
-                      </div> -->
-                      <img
-                        src="./src/images/img-customer.jpg"
-                        alt=""
-                        class="w-12 h-12 rounded-full"
-                      />
-
-                      <div class="flex flex-col text-white">
-                        <span><b>Deyverson,</b></span>
-                        <span>Profissão, Nome da empresa</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Section serviços -->
-      <div
-        class="section-hero h-svh lg:h-auto bg-[#131313] hidden"
-        id="servicos"
-      >
-        <div class="lg:py-28 h-full">
-          <div class="lg:mx-36 desktop:mx-60 lg:flex lg:flex-col lg:gap-y-4">
-            <h3
-              class="text-white lg:border-white lg:border-l-8 lg:text-3xl lg:pl-6"
-            >
-              Nossos Serviços
-            </h3>
-
-            <span class="text-white"
-              >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui id,
-              deleniti beatae in perspiciatis quo voluptates velit fuga suscipit
-              voluptatibus ipsum pariatur fugiat unde quod, ea quibusdam,
-              consectetur placeat repellat!</span
-            >
-          </div>
-
-          <div class="text-white lg:mx-36 lg:my lg:h-full">
-            <div
-              class="list-services h-5/6 lg:mt-7 lg:grid lg:grid-flow-col lg:grid-rows-3 lg:gap-y-8 lg:justify-between grid"
-            >
-              <div class="border-2 p-4 w-max lg:flex lg:items-center">
-                BPC(Benefício de Prestação Continuada)
-              </div>
-              <div class="border-2 p-4 w-max lg:flex lg:items-center">
-                BPC(Benefício de Prestação Continuada)
-              </div>
-              <div class="border-2 p-4 w-max lg:flex lg:items-center">
-                BPC(Benefício de Prestação Continuada)
-              </div>
-              <div class="border-2 p-4 w-max lg:flex lg:items-center">
-                BPC(Benefício de Prestação Continuada)
-              </div>
-              <div class="border-2 p-4 w-max lg:flex lg:items-center">
-                BPC(Benefício de Prestação Continuada)
-              </div>
-              <div class="border-2 p-4 w-max lg:flex lg:items-center">
-                BPC(Benefício de Prestação Continuada)
-              </div>
-              <div class="border-2 p-4 w-max lg:flex lg:items-center">
-                BPC(Benefício de Prestação Continuada)
-              </div>
-              <div class="border-2 p-4 w-max lg:flex lg:items-center">
-                BPC(Benefício de Prestação Continuada)
-              </div>
-              <div class="border-2 p-4 w-max lg:flex lg:items-center">
-                BPC(Benefício de Prestação Continuada)
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Section depoimentos -->
-      <section
-        class="hidden section-testimonials h-svh desktop:max-h-[800px] bg-[#0c1a25]"
-        id="depoimentos"
-      >
-        <div class="flex flex-col h-full">
-          <div class="my-auto flex flex-col items-center justify-center h-max">
-            <div class="mx-3 lg:mx-36 desktop:mx-60 flex flex-col gap-y-4">
-              <h3
-                class="border-white border-l-4 lg:border-l-8 text-2xl lg:text-3xl desktop:text-4xl pl-2 lg:pl-6 text-white font-semibold"
-              >
-                O que nossos clientes dizem?
-              </h3>
-
-              <span class="text-white desktop:text-xl"
-                >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-                id, deleniti beatae in perspiciatis quo voluptates velit fuga
-                suscipit voluptatibus ipsum pariatur fugiat unde quod, ea
-                quibusdam, consectetur placeat repellat!</span
-              >
-            </div>
-
-            <div class="mx-3 lg:mx-36 desktop:mx-60 lg:h-max">
-              <div
-                class="list-depoimentos h-5/6 mt-7 flex flex-col lg:grid lg:grid-cols-3 gap-y-8 lg:gap-x-6 lg:justify-between"
-              >
-                <div
-                  class="card-customer border-2 h-max p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform rounded-2xl"
-                >
-                  <div>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                  </div>
-
-                  <div class="message-customer text-white">
-                    "A customer testimonial that highlights features and answers
-                    potential customer doubts about your product or service.
-                    Showcase testimonials from a similar demographic to your
-                    customers."
-                  </div>
-
-                  <div class="info-customer-card flex gap-x-4">
-                    <div class="w-12 h-12 bg-slate-400 rounded-full">
-                      <!-- <img
-                  src="./src/images/img-customer.jpg"
-                  alt=""
-                  style="width: 3rem"
-                  class="rounded-full"
-                /> -->
-                    </div>
-
-                    <div class="flex flex-col text-white">
-                      <span><b>Cliente Nome,</b></span>
-                      <span>Profissão, Nome da empresa</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="card-customer border-2 h-max p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-2xl lg:hover:bg-[#0F2041] rounded-2xl"
-                >
-                  <div>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                  </div>
-
-                  <div class="message-customer text-white">
-                    "A customer testimonial that highlights features and answers
-                    potential customer doubts about your product or service.
-                    Showcase testimonials from a similar demographic to your
-                    customers."
-                  </div>
-
-                  <div class="flex gap-x-4">
-                    <div class="w-12 h-12 bg-slate-400 rounded-full">
-                      <!-- <img
-                        src="./src/images/img-customer.jpg"
-                        alt=""
-                        style="width: 3rem"
-                        class="rounded-full"
-                      /> -->
-                    </div>
-
-                    <div class="flex flex-col text-white">
-                      <span><b>Cliente Nome,</b></span>
-                      <span>Profissão, Nome da empresa</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="card-customer border-2 h-max p-6 flex flex-col gap-y-4 lg:hover:scale-110 lg:transition-transform lg:hover:shadow-lg rounded-2xl"
-                >
-                  <div>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                    <span
-                      class="icon-[ic--sharp-star]"
-                      style="width: 1.5rem; height: 1.5rem; color: #cfb820"
-                    ></span>
-                  </div>
-
-                  <div class="message-customer text-white">
-                    "A customer testimonial that highlights features and answers
-                    potential customer doubts about your product or service.
-                    Showcase testimonials from a similar demographic to your
-                    customers."
-                  </div>
-
-                  <div class="info-customer-card flex gap-x-4">
-                    <div class="w-12 h-12 bg-slate-400 rounded-full">
-                      <!-- <img
-                      src="./src/images/img-customer.jpg"
-                      alt=""
-                      style="width: 3rem"
-                      class="rounded-full"
-                    /> -->
-                    </div>
-
-                    <div class="flex flex-col text-white">
-                      <span><b>Cliente Nome,</b></span>
-                      <span>Profissão, Nome da empresa</span>
-                    </div>
+              <div class="mx-3 lg:mx-36 lg:h-max">
+                <div class="slider-container">
+                  <div class="slider gap-2" id="slider">
+                    <img
+                      src="/src/images/img_depoimentos.png"
+                      class="slide border-2 border-white"
+                      alt="Depoimentos"
+                    />
+                    <img
+                      src="/src/images/img_01.png"
+                      class="slide border-2 border-white"
+                      alt="Depoimentos"
+                    />
+                    <img
+                      src="/src/images/img_01.png"
+                      class="slide border-2 border-white"
+                      alt="Depoimentos"
+                    />
+                    <img
+                      src="/src/images/img_01.png"
+                      class="slide border-2 border-white"
+                      alt="Depoimentos"
+                    />
+                    <img
+                      src="/src/images/img_01.png"
+                      class="slide border-2 border-white"
+                      alt="Depoimentos"
+                    />
+                    <img
+                      src="/src/images/img_01.png"
+                      class="slide border-2 border-white"
+                      alt="Depoimentos"
+                    />
                   </div>
                 </div>
               </div>
@@ -762,7 +614,7 @@
       </section>
     </main>
 
-    <footer class="h-1/2 bg-[#B48A2B] text-white">
+    <footer class="h-1/2 bg-[#B48A2B] text-black">
       <div class="lg:mx-36 lg:py-12 flex h-full items-center">
         <div class="w-1/3 h-full">
           <img src="./src/images/logo preta.png" alt="" style="width: 75%" />
@@ -786,7 +638,10 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="/src/app.js" defer></script>
   </body>
 </html>
