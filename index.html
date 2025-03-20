@@ -26,6 +26,7 @@
       class="fixed w-full text-white lg:border-0 transition-all ease-in-out z-10"
     >
       <nav
+        id="navbar"
         class="lg:flex lg:justify-between lg:mx-24 xl:mx-36 desktop:mx-60 my-6"
       >
         <div class="mx-3 lg:mx-0">
@@ -47,28 +48,28 @@
           <li
             class="py-2 my-1 border-b-2 lg:border-0 lg:bg-gradient-to-r lg:hover:from-initial-font lg:hover:from-15% lg:hover:via-middle-font lg:hover:via-25% lg:hover:to-final-font lg:hover:to-90% lg:hover:inline-block lg:hover:text-transparent lg:hover:bg-clip-text lg:hover:border- lg:hover:transition-all lg:ease-in-out"
           >
-            <a href="#">Início</a>
+            <a class="nav-link" href="#">Início</a>
           </li>
           <li
             class="py-2 my-1 border-b-2 lg:border-0 lg:bg-gradient-to-r lg:hover:from-initial-font lg:hover:from-15% lg:hover:via-middle-font lg:hover:via-25% lg:hover:to-final-font lg:hover:to-90% lg:hover:inline-block lg:hover:text-transparent lg:hover:bg-clip-text lg:hover:border- lg:hover:transition-all lg:ease-in-out"
           >
-            <a href="#sobre"> Sobre </a>
+            <a class="nav-link" href="#sobre"> Sobre </a>
           </li>
           <li
             class="py-2 my-1 border-b-2 lg:border-0 lg:bg-gradient-to-r lg:hover:from-initial-font lg:hover:from-15% lg:hover:via-middle-font lg:hover:via-25% lg:hover:to-final-font lg:hover:to-90% lg:hover:inline-block lg:hover:text-transparent lg:hover:bg-clip-text lg:hover:border- lg:hover:transition-all lg:ease-in-out"
           >
-            <a href="#servicos">Serviços</a>
+            <a class="nav-link" href="#servicos">Serviços</a>
           </li>
           <li
             class="py-2 my-1 border-b-2 lg:border-0 lg:bg-gradient-to-r lg:hover:from-initial-font lg:hover:from-15% lg:hover:via-middle-font lg:hover:via-25% lg:hover:to-final-font lg:hover:to-90% lg:hover:inline-block lg:hover:text-transparent lg:hover:bg-clip-text lg:hover:border- lg:hover:transition-all lg:ease-in-out"
           >
-            <a href="#depoimentos">Depoimentos</a>
+            <a class="nav-link" href="#depoimentos">Depoimentos</a>
           </li>
           <li class="py-2 my-1">
             <span
-              class="py-2 px-10 my-1 rounded-2xl border-2 border-white lg:hover:border-black lg:hover:bg-white lg:hover:text-black lg:hover:transition-all lg:hover:ease-in-out"
+              class="py-2 px-10 my-1 rounded-2xl border-2 border-whitelg:hover:bg-white lg:hover:bg lg:hover:transition-all lg:hover:ease-in-out"
             >
-              <a href="#contato">Contato</a></span
+              <a class="nav-link" href="#contato">Contato</a></span
             >
           </li>
         </ol>
@@ -79,6 +80,7 @@
       <!-- Section hero main -->
       <section
         class="section-hero relative h-svh bg-bg-hero bg-cover bg-[-10rem_center] lg:bg-top"
+        id="home"
       >
         <!--lg:bg-bg-hero lg:bg-cover lg:bg-top"-->
         <div
@@ -99,13 +101,13 @@
 
           <div class="relative cursor-pointer">
             <span
-              class="inline-flex absolute w-36 h-12 desktop:w-44 desktop:h-16 rounded-2xl bg-[#36342d] animate-pulse hover:scale-110 lg:transition-transform"
+              class="inline-flex absolute w-40 h-12 desktop:w-44 desktop:h-16 rounded-2xl bg-[#36342d] animate-pulse hover:scale-110 lg:transition-transform"
             ></span>
             <span
-              class="absolute flex justify-center items-center w-36 h-12 desktop:w-44 desktop:h-16 rounded-2xl bg-[#D1B96E] hover:scale-110 lg:transition-transform"
+              class="absolute flex justify-center items-center w-40 h-12 desktop:w-44 desktop:h-16 rounded-2xl bg-[#D1B96E] hover:scale-110 lg:transition-transform"
             >
               <a
-                class="w-36 h-12 flex items-center justify-center font-semibold lg:text-xl desktop:text-2xl"
+                class="flex items-center justify-center w-40 h-12 relative text-xl desktop:text-2xl bg-[#D1B96E] font-semibold text-[#1F3A67] rounded-2xl shadow-lg border-4 border-[#C2882F] before:inset-0 before:rounded-full before:bg-[#D9B35A] before:blur-lg before:opacity-60"
                 href=""
               >
                 Saiba Mais
@@ -169,12 +171,10 @@
       </section>
 
       <!-- Section sobre -->
-      <section
-        class="section-about h-max desktop:max-h-[800px] bg-[#1F3A67] flex flex-col gap-24"
-      >
-        <div class="flex flex-col h-full justify-center" id="sobre">
+      <section class="section-about h-max bg-[#1F3A67] flex flex-col gap-24">
+        <div class="flex flex-col h-dvh justify-center" id="sobre">
           <div
-            class="relative mx-3 lg:mx-36 lg:pt-28 desktop:mx-60 my-auto h-max flex flex-col lg:gap-y-6 desktop:gap-y-12"
+            class="relative mx-3 lg:mx-36 lg:pt-28 desktop:pt-0 desktop:mx-60 my-auto h-max flex flex-col lg:gap-y-6 desktop:gap-y-12"
             id="sobre"
           >
             <h3
@@ -244,7 +244,7 @@
                   </div>
                   <div class="flex">
                     <button
-                      class="py-2 px-6 text-xl desktop:text-2xl bg-btn-hero text-black rounded-xl font-semibold"
+                      class="relative py-2 px-6 text-xl desktop:text-2xl bg-[#D1B96E] font-semibold text-[#1F3A67] rounded-2xl shadow-lg border-4 border-[#C2882F] before:inset-0 before:rounded-full before:bg-[#D9B35A] before:blur-lg before:opacity-60"
                     >
                       Falar Agora
                     </button>
@@ -261,11 +261,11 @@
       </section>
 
       <!-- Section serviços -->
-      <section class="section-hero h-svh lg:h-auto bg-[#F7F7F7]" id="servicos">
+      <section class="section-hero h-svh lg:h-auto bg-gray-100" id="servicos">
         <div class="lg:py-28 h-full">
           <div class="lg:mx-36 desktop:mx-60 lg:flex lg:flex-col lg:gap-y-4">
             <h3
-              class="text-[#B6781E] font-semibold lg:border-[#B6781E] lg:border-l-8 lg:text-3xl lg:pl-6"
+              class="text-[#B6781E] font-semibold lg:border-[#B6781E] lg:border-l-8 lg:text-3xl desktop:text-4xl lg:pl-6"
             >
               Nossos Serviços
             </h3>
@@ -462,7 +462,7 @@
 
           <div class="flex lg:justify-center lg:mt-8">
             <button
-              class="py-4 px-16 text-xl desktop:text-2xl bg-[#06C10C] text-white rounded-xl font-semibold shadow-lg"
+              class="py-4 px-16 text-xl desktop:text-2xl bg-[#06C10C] text-white rounded-2xl font-semibold shadow-lg"
             >
               Solicitar Agora
             </button>
@@ -471,13 +471,10 @@
       </section>
 
       <!-- Section depoimentos -->
-      <section
-        class="section-testimonials h-max lg:h-svh desktop:max-h-[800px] bg-[#1F3A67]"
-        id="depoimentos"
-      >
+      <section class="section-testimonials h-max bg-[#1F3A67]" id="depoimentos">
         <div class="flex flex-col h-full">
           <div
-            class="lg:mx-36 lg:pt-12 desktop:pt-10 desktop:min-h-[632px] desktop:mx-60 my-auto h-max lg:flex lg:flex-col lg:gap-y-6 desktop:gap-y-12"
+            class="lg:mx-36 lg:pt-28 lg:pb-20 desktop:mx-60 my-auto h-max lg:flex lg:flex-col desktop:gap-y-12"
           >
             <div class="flex flex-col gap-y-4 desktop:gap-y-4">
               <h3
@@ -496,128 +493,170 @@
             <div
               class="flex h-full justify-center items-center desktop:text-xl lg:overflow-hidden"
             >
-              <div class="mx-3 lg:mx-36 lg:h-max">
-                <div class="slider-container">
-                  <div class="slider gap-2" id="slider">
-                    <img
-                      src="/src/images/img_depoimentos.png"
-                      class="slide border-2 border-white"
-                      alt="Depoimentos"
-                    />
-                    <img
-                      src="/src/images/img_01.png"
-                      class="slide border-2 border-white"
-                      alt="Depoimentos"
-                    />
-                    <img
-                      src="/src/images/img_01.png"
-                      class="slide border-2 border-white"
-                      alt="Depoimentos"
-                    />
-                    <img
-                      src="/src/images/img_01.png"
-                      class="slide border-2 border-white"
-                      alt="Depoimentos"
-                    />
-                    <img
-                      src="/src/images/img_01.png"
-                      class="slide border-2 border-white"
-                      alt="Depoimentos"
-                    />
-                    <img
-                      src="/src/images/img_01.png"
-                      class="slide border-2 border-white"
-                      alt="Depoimentos"
-                    />
+              <div class="container-depoimentos lg:h-max">
+                <div class="slider-container rounded-lg overflow-hidden">
+                  <div class="slider">
+                    <div class="slide">
+                      <img
+                        class="lg:h-[350px] desktop:h-[450px] border-8 border-black"
+                        src="../src/images/img_01.png"
+                        alt="Depoimento 1"
+                      />
+                    </div>
+                    <div class="slide">
+                      <img
+                        class="lg:h-[350px] desktop:h-[450px]"
+                        src="../src/images/img_01.png"
+                        alt="Depoimento 2"
+                      />
+                    </div>
+                    <div class="slide">
+                      <img
+                        class="lg:h-[350px] desktop:h-[450px]"
+                        src="../src/images/img_01.png"
+                        alt="Depoimento 3"
+                      />
+                    </div>
+                    <div class="slide">
+                      <img
+                        class="lg:h-[350px] desktop:h-[450px]"
+                        src="../src/images/img_01.png"
+                        alt="Depoimento 4"
+                      />
+                    </div>
+                    <div class="slide">
+                      <img
+                        class="lg:h-[350px] desktop:h-[450px]"
+                        src="../src/images/img_01.png"
+                        alt="Depoimento 1"
+                      />
+                    </div>
+                    <div class="slide">
+                      <img
+                        class="lg:h-[350px] desktop:h-[450px]"
+                        src="../src/images/img_01.png"
+                        alt="Depoimento 2"
+                      />
+                    </div>
+                    <div class="slide">
+                      <img
+                        class="lg:h-[350px] desktop:h-[450px]"
+                        src="../src/images/img_01.png"
+                        alt="Depoimento 3"
+                      />
+                    </div>
+                    <div class="slide">
+                      <img
+                        class="lg:h-[350px] desktop:h-[450px]"
+                        src="../src/images/img_01.png"
+                        alt="Depoimento 4"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div class="flex lg:justify-center lg:mt-8">
+              <button
+                class="py-4 px-16 text-xl desktop:text-2xl bg-[#D1B96E] text-[#1F3A67] rounded-xl font-semibold shadow-lg"
+              >
+                Agende uma consulta
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Section Contatos -->
-      <section class="section-contact bg-white hidden" id="contato">
-        <div class="py-16 lg:py-28 h-full">
-          <div class="mx-3 lg:mx-36 flex flex-col gap-y-4">
+      <section class="section-contact bg-[#F7F7F7]" id="contato">
+        <div class="lg:mx-36 desktop:mx-60 py-16 lg:py-28 h-full">
+          <div class="flex flex-col gap-y-4">
             <h3
-              class="border-black border-l-4 lg:border-l-8 text-2xl lg:text-3xl pl-2 lg:pl-6 text-black font-semibold"
+              class="border-[#B6781E] border-l-4 lg:border-l-8 text-2xl lg:text-3xl desktop:text-4xl pl-2 lg:pl-6 text-[#B6781E] font-semibold"
             >
-              Fale conosco
+              Envie-nos uma mensagem
             </h3>
           </div>
 
-          <div class="mx-3 flex justify-between lg:mx-36 lg:my lg:h-full">
-            <div class="w-1/2 flex flex-col gap-y-4 mr-12">
-              <span class="text-black mt-4"
+          <div class="flex justify-between lg:h-min">
+            <div class="flex w-full desktop:w-1/2 flex-col gap-y-4">
+              <span class="text-black mt-4 desktop:text-xl"
                 >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </span>
+              <div class="bg-white p-8 rounded-lg shadow-md">
+                <form class="mt-2 space-y-4">
+                  <div class="flex gap-4 desktop:flex-col">
+                    <input
+                      type="text"
+                      placeholder="Nome completo"
+                      class="w-full p-3 border rounded bg-yellow-50"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      class="w-full p-3 border rounded bg-yellow-50"
+                    />
+                  </div>
+                  <div class="flex gap-4 desktop:flex-col">
+                    <input
+                      type="tel"
+                      placeholder="Telefone"
+                      class="w-full p-3 border rounded bg-yellow-50"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Benefício desejado"
+                      class="w-full p-3 border rounded bg-yellow-50"
+                    />
+                  </div>
+                  <textarea
+                    placeholder="Mensagem"
+                    class="w-full p-3 border rounded bg-yellow-50 h-32"
+                  ></textarea>
 
-              <div
-                class="h-full border-2 bg-[url('/src/images/01092023-IMG_6697.jpg')] bg-cover bg-[left_-8rem] rounded-xl"
-              ></div>
+                  <div class="flex space-x-4">
+                    <button
+                      type="submit"
+                      class="bg-[#1F3A67] text-white py-4 px-16 desktop:px-10 desktop:py-5 rounded-2xl text-xl"
+                    >
+                      Enviar contato
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-[#D1B96E] text-white py-4 px-16 desktop:px-10 desktop:py-5 rounded-2xl text-xl flex items-center"
+                    >
+                      <span>Falar pelo WhatsApp</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 ml-2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M3.75 3.75h16.5v16.5H3.75V3.75zm8.25 13.5a5.25 5.25 0 110-10.5 5.25 5.25 0 010 10.5zm0-2.625a2.625 2.625 0 100-5.25 2.625 2.625 0 000 5.25z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
-            <div class="w-1/2 border-2 px-8 py-8 bg-black rounded-xl">
-              <form action="" class="w-full flex flex-col gap-4">
-                <input
-                  type="text"
-                  placeholder="Nome Completo"
-                  class="border-2 w-full py-2 pl-1.5 rounded-xl"
-                />
 
-                <input
-                  type="email"
-                  placeholder="Email"
-                  class="border-2 w-full py-2 pl-1.5 rounded-xl"
-                />
-
-                <input
-                  type="text"
-                  placeholder="Telefone"
-                  class="border-2 w-full py-2 pl-1.5 rounded-xl"
-                />
-
-                <input
-                  type="text"
-                  placeholder="Benefício desejado"
-                  class="border-2 w-full py-2 pl-1.5 rounded-xl"
-                />
-
-                <textarea
-                  name="message"
-                  id=""
-                  cols="30"
-                  rows="5"
-                  class="border-2 w-full py-2 pl-1.5 rounded-xl"
-                  placeholder="Mensagem"
-                ></textarea>
-
-                <div>
-                  <button
-                    type="submit"
-                    class="bg-btn-hero px-6 py-2 rounded-xl"
-                  >
-                    Enviar Contato
-                  </button>
-
-                  <a
-                    href="http://"
-                    class="bg-black px-6 py-2.5 rounded-xl text-white"
-                    >Fale Conosco pelo Whatsapp</a
-                  >
-                </div>
-              </form>
-            </div>
+            <div class="mt-14"></div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="h-1/2 bg-[#B48A2B] text-black">
-      <div class="lg:mx-36 lg:py-12 flex h-full items-center">
+    <footer class="h-1/2 bg-[#1F3A67] text-white">
+      <div class="desktop:mx-60 lg:mx-36 lg:py-12 flex h-full items-center">
         <div class="w-1/3 h-full">
-          <img src="./src/images/logo preta.png" alt="" style="width: 75%" />
+          <img src="./src/images/logo_dourada.png" alt="" style="width: 75%" />
         </div>
         <div class="w-full h-full flex">
           <div class="w-1/2 text-right">

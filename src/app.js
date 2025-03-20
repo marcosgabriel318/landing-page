@@ -93,20 +93,51 @@ function atualizarCarrossel() {
 //   slider.appendChild(clone);
 // });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.querySelector(".slider");
+  const slides = Array.from(slider.children);
 
-const slider = document.getElementById("slider");
-const slides = Array.from(slider.children);
-const speed = 25; // Ajuste a velocidade do carrossel
-document.documentElement.style.setProperty("--speed", speed + "s");
-
-// Duplica os slides duas vezes para efeito infinito
-slides.forEach((slide) => {
-  let clone1 = slide.cloneNode(true);
-  let clone2 = slide.cloneNode(true);
-  slider.appendChild(clone1);
-  slider.appendChild(clone2);
+  slides.forEach((slide) => {
+    let clone = slide.cloneNode(true);
+    slider.appendChild(clone);
+  });
 });
 
 setInterval(atualizarCarrossel, intervalDuration);
 
 addAnimation();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+  const navbar = document.getElementById("navbar");
+
+  function changeActiveLink() {
+    let index = sections.length;
+    while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+    //navLinks.forEach((link) => link.classList.remove("active"));
+    //navLinks[index].classList.add("active");
+
+    if (sections[index].id === "servicos" || sections[index].id === "contato") {
+      header.classList.remove(
+        "bg-transparent/5",
+        "backdrop-blur-md",
+        "shadow-md",
+        "backdrop-contrast-10"
+      );
+      header.classList.add("bg-[#1F3A67]");
+      //header.style.background = "#1F3A67";
+    } else if (sections[index].id === "home" && window.scrollY == 0) {
+      header.classList.remove("bg-[#1F3A67]");
+      header.classList.remove(
+        "bg-transparent/5",
+        "backdrop-blur-md",
+        "shadow-md",
+        "backdrop-contrast-10"
+      );
+    }
+  }
+
+  changeActiveLink();
+  window.addEventListener("scroll", changeActiveLink);
+});
