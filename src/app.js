@@ -38,7 +38,7 @@ menuIcon.addEventListener("click", () => {
   ) {
     menu.classList.remove("-top-[260px]");
 
-    menu.classList.add("top-14", "bg-[#131313]");
+    menu.classList.add("top-14", "bg-[#1F3A67]");
     menu.classList.toggle("-z-10");
   } else {
     menu.classList.remove("top-14");
@@ -81,17 +81,6 @@ function atualizarCarrossel() {
     }, transitionDuration);
   }
 }
-
-// const slider = document.getElementById("slider");
-// const slides = Array.from(slider.children);
-// const speed = 25; // Ajuste a velocidade do carrossel
-// document.documentElement.style.setProperty("--speed", speed + "s");
-
-// // Duplica os slides apenas uma vez para efeito infinito
-// slides.forEach((slide) => {
-//   let clone = slide.cloneNode(true);
-//   slider.appendChild(clone);
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
   const slider = document.querySelector(".slider");
