@@ -79,12 +79,12 @@
     <main>
       <!-- Section hero main -->
       <section
-        class="section-hero relative h-svh bg-bg-hero bg-cover bg-[-10rem_center] lg:bg-top"
+        class="section-hero relative h-svh bg-bg-hero bg-cover bg-[center_left_-88rem] lg:bg-top"
         id="home"
       >
         <!--lg:bg-bg-hero lg:bg-cover lg:bg-top"-->
         <div
-          class="w-[90%] lg:w-1/2 absolute top-1/3 lg:top-1/4 mx-3 lg:mx-24 xl:mx-36 desktop:mx-60 flex flex-col gap-4 lg:gap-6 desktop:gap-8 lg:z-[1]"
+          class="w-[90%] lg:w-1/2 absolute top-1/3 lg:top-1/4 mx-3 lg:mx-24 xl:mx-36 desktop:mx-60 flex flex-col gap-4 desktop:gap-8 lg:z-[1]"
         >
           <h3
             class="text-[2.4rem] leading-10 lg:flex lg:flex-col lg:text-5xl desktop:text-6xl lg:leading-[60px] min-xl:leading-[5rem] font-bold bg-gradient-to-r from-initial-font from-15% via-middle-font via-25% to-final-font to-90% text-transparent bg-clip-text"
@@ -107,7 +107,7 @@
               class="absolute flex justify-center items-center w-40 h-12 desktop:w-44 desktop:h-16 rounded-2xl bg-[#D1B96E] hover:scale-110 lg:transition-transform"
             >
               <a
-                class="flex items-center justify-center w-40 h-12 relative text-xl desktop:text-2xl bg-[#D1B96E] font-semibold text-[#1F3A67] rounded-2xl shadow-lg border-4 border-[#C2882F] before:inset-0 before:rounded-full before:bg-[#D9B35A] before:blur-lg before:opacity-60"
+                class="flex items-center justify-center w-full h-full relative text-xl desktop:text-2xl bg-[#D1B96E] font-semibold text-[#1F3A67] rounded-2xl shadow-lg border-4 border-[#C2882F] before:inset-0 before:rounded-full before:bg-[#D9B35A] before:blur-lg before:opacity-60"
                 href=""
               >
                 Saiba Mais
@@ -121,7 +121,7 @@
         ></div>
 
         <div
-          class="scroller absolute z-[9] bottom-8 text-white max-w-full overflow-x-hidden"
+          class="scroller absolute z-[9] bottom-4 text-white max-w-full overflow-x-hidden"
           data-speed="slow"
           data-direction="right"
         >
@@ -172,34 +172,33 @@
 
       <!-- Section sobre -->
       <section class="section-about h-max bg-[#1F3A67] flex flex-col gap-24">
-        <div class="flex flex-col h-dvh justify-center" id="sobre">
+        <div class="flex flex-col justify-center" id="sobre">
           <div
-            class="relative mx-3 lg:mx-36 lg:pt-28 desktop:pt-0 desktop:mx-60 my-auto h-max flex flex-col lg:gap-y-6 desktop:gap-y-12"
+            class="relative mx-6 lg:mx-36 pt-20 lg:pt-28 desktop:pt-0 desktop:mx-60 my-auto h-max flex flex-col gap-y-6 desktop:gap-y-12"
             id="sobre"
           >
             <h3
-              class="text-white font-semibold lg:border-white lg:border-l-8 lg:text-3xl desktop:text-4xl lg:pl-6"
+              class="text-white font-semibold lg:border-white lg:border-l-8 text-2xl lg:text-3xl desktop:text-4xl lg:pl-6"
             >
               Conheça Nosso Escritório
             </h3>
 
             <div
-              class="flex h-full flex-col lg:flex-row justify-between items-center"
+              class="flex h-5/6 lg:h-full flex-col lg:flex-row justify-between items-center"
             >
               <div
-                class="lg:w-5/12 w-full lg:left-0 overflow-hidden rounded-lg outline outline-8 lg:m-2 outline-amber-200"
+                class="lg:w-5/12 h-5/6 lg:h-auto lg:left-0 overflow-hidden rounded-lg outline outline-8 lg:m-2 outline-amber-200"
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
                 <div
-                  class="images-slider w-full flex h-full lg:max-h-[25rem] desktop:max-h-[35rem]"
+                  class="images-slider w-full flex max-h-[25rem] desktop:max-h-[35rem]"
                   id="img"
                 >
-                  <!-- max-h-[35rem] bg-[url('/src/images/officer-inside.jpg')] bg-cover bg-left rounded-lg outline outline-8 m-2 outline-amber-200" -->
                   <img
                     src="./src/images/officer-inside.jpg"
                     alt=""
-                    class="w-screen saturate-150"
+                    class="w-screen saturate-150 mt-[-4rem]"
                   />
                   <img
                     src="./src/images/officer-inside-04.jpg"
@@ -215,11 +214,11 @@
                 data-aos-duration="1000"
               >
                 <span
-                  class="text-white text-justify desktop:text-xl h-full flex flex-col justify-around"
+                  class="text-white text-justify desktop:text-xl h-full flex flex-col justify-around gap-4"
                 >
-                  <div class="flex justify-center">
+                  <div class="justify-center flex">
                     <span
-                      class="icon-[hugeicons--justice-scale-01]"
+                      class="icon-[hugeicons--justice-scale-01] hidden lg:flex"
                       style="width: 2.5rem; height: 2.5rem"
                     ></span>
                   </div>
@@ -261,27 +260,29 @@
       </section>
 
       <!-- Section serviços -->
-      <section class="section-hero h-svh lg:h-auto bg-gray-100" id="servicos">
-        <div class="lg:py-28 h-full">
-          <div class="lg:mx-36 desktop:mx-60 lg:flex lg:flex-col lg:gap-y-4">
+      <section class="section-hero lg:h-auto bg-gray-100" id="servicos">
+        <div class="py-20 lg:py-28 h-full">
+          <div
+            class="mx-6 lg:mx-36 desktop:mx-60 lg:flex lg:flex-col lg:gap-y-4"
+          >
             <h3
-              class="text-[#B6781E] font-semibold lg:border-[#B6781E] lg:border-l-8 lg:text-3xl desktop:text-4xl lg:pl-6"
+              class="text-[#B6781E] font-semibold lg:border-[#B6781E] lg:border-l-8 text-2xl lg:text-3xl desktop:text-4xl lg:pl-6"
             >
               Nossos Serviços
             </h3>
 
-            <span class="text-black text-lg font-semibold"
+            <span class="text-black lg:text-lg font-semibold"
               >Somos especializados em direito previdenciário e atuamos de forma
               ágil e precisa com uma gama de serviços. Conheça abaixo um pouco
               mais da nossa atuação:</span
             >
           </div>
 
-          <div class="text-black lg:mx-36 desktop:mx-60 lg:h-full">
+          <div class="text-black mx-6 lg:mx-36 desktop:mx-60 lg:h-full">
             <div class="list-services h-5/6 mt-8 lg:flex lg:flex-col lg:gap-6">
               <div class="lg:flex lg:w-full lg:gap-6">
                 <div
-                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                  class="p-8 lg:w-1/3 flex flex-col items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
                 >
                   <div class="bg-[#3c6bb9] rounded-full w-min flex">
                     <span
@@ -290,7 +291,7 @@
                     ></span>
                   </div>
                   <h3
-                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                    class="px-4 py-2 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
                   >
                     BPC
                   </h3>
@@ -301,7 +302,7 @@
                   </p>
                 </div>
                 <div
-                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                  class="p-8 lg:w-1/3 flex flex-col items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
                 >
                   <div class="bg-[#3c6bb9] rounded-full w-min flex">
                     <span
@@ -314,7 +315,7 @@
                     ></span>-->
                   </div>
                   <h3
-                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                    class="px-4 py-2 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
                   >
                     Salário Maternidade
                   </h3>
@@ -326,7 +327,7 @@
                   </p>
                 </div>
                 <div
-                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                  class="p-8 lg:w-1/3 flex flex-col items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
                 >
                   <div class="bg-[#3c6bb9] rounded-full w-min flex">
                     <span
@@ -335,7 +336,7 @@
                     ></span>
                   </div>
                   <h3
-                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                    class="px-4 py-2 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
                   >
                     Seguro Defeso
                   </h3>
@@ -349,7 +350,7 @@
 
               <div class="lg:flex lg:w-full lg:gap-6">
                 <div
-                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                  class="p-8 lg:w-1/3 flex flex-col items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
                 >
                   <div class="bg-[#3c6bb9] rounded-full w-min flex">
                     <span
@@ -358,7 +359,7 @@
                     ></span>
                   </div>
                   <h3
-                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                    class="px-4 py-2 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
                   >
                     Auxílio Doença
                   </h3>
@@ -370,7 +371,7 @@
                   </p>
                 </div>
                 <div
-                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                  class="p-8 lg:w-1/3 flex flex-col items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
                 >
                   <div class="bg-[#3c6bb9] rounded-full w-min flex">
                     <span
@@ -379,7 +380,7 @@
                     ></span>
                   </div>
                   <h3
-                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                    class="px-4 py-2 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
                   >
                     Aposentadoria Rural
                   </h3>
@@ -391,7 +392,7 @@
                   </p>
                 </div>
                 <div
-                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                  class="p-8 lg:w-1/3 flex flex-col items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
                 >
                   <div class="bg-[#3c6bb9] rounded-full w-min flex">
                     <span
@@ -400,7 +401,7 @@
                     ></span>
                   </div>
                   <h3
-                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                    class="px-4 py-2 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
                   >
                     Pensão por Morte
                   </h3>
@@ -415,7 +416,7 @@
 
               <div class="lg:flex lg:w-full lg:gap-6 lg:justify-center">
                 <div
-                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                  class="p-8 lg:w-1/3 flex flex-col items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
                 >
                   <div class="bg-[#3c6bb9] rounded-full w-min flex">
                     <span
@@ -424,7 +425,7 @@
                     ></span>
                   </div>
                   <h3
-                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                    class="px-4 py-2 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
                   >
                     Aposentadoria por Invalidez
                   </h3>
@@ -436,7 +437,7 @@
                   </p>
                 </div>
                 <div
-                  class="p-8 lg:w-1/3 lg:flex lg:flex-col lg:items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
+                  class="p-8 lg:w-1/3 flex flex-col items-center rounded-2xl shadow-custom-dark lg:hover:scale-110 lg:transition-transform"
                 >
                   <div class="bg-[#3c6bb9] rounded-full w-min flex">
                     <span
@@ -445,7 +446,7 @@
                     ></span>
                   </div>
                   <h3
-                    class="px-4 py-2 bg-zinc-50 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
+                    class="px-4 py-2 text-[#3C6BB9] rounded-lg font-semibold text-xl text-center"
                   >
                     Aposentadoria por Tempo de Contribuição
                   </h3>
@@ -460,7 +461,7 @@
             </div>
           </div>
 
-          <div class="flex lg:justify-center lg:mt-8">
+          <div class="flex justify-center mt-8">
             <button
               class="py-4 px-16 text-xl desktop:text-2xl bg-[#06C10C] text-white rounded-2xl font-semibold shadow-lg"
             >
@@ -471,14 +472,17 @@
       </section>
 
       <!-- Section depoimentos -->
-      <section class="section-testimonials h-max bg-[#1F3A67]" id="depoimentos">
-        <div class="flex flex-col h-full">
+      <section
+        class="section-testimonials lg:h-max bg-[#1F3A67]"
+        id="depoimentos"
+      >
+        <div class="flex flex-col lg:h-full">
           <div
-            class="lg:mx-36 lg:pt-28 lg:pb-20 desktop:mx-60 my-auto h-max lg:flex lg:flex-col desktop:gap-y-12"
+            class="mx-6 lg:mx-36 pt-20 lg:pt-28 pb-20 desktop:mx-60 my-auto lg:flex lg:flex-col desktop:gap-y-12"
           >
             <div class="flex flex-col gap-y-4 desktop:gap-y-4">
               <h3
-                class="text-[#DFA948] font-semibold lg:border-[#DFA948] lg:border-l-8 lg:text-3xl desktop:text-4xl lg:pl-6"
+                class="text-[#DFA948] font-semibold lg:border-[#DFA948] lg:border-l-8 text-2xl lg:text-3xl desktop:text-4xl lg:pl-6"
               >
                 O que nossos clientes dizem?
               </h3>
@@ -491,63 +495,63 @@
             </div>
 
             <div
-              class="flex h-full justify-center items-center desktop:text-xl lg:overflow-hidden"
+              class="flex justify-center items-center desktop:text-xl overflow-hidden"
             >
-              <div class="container-depoimentos lg:h-max">
+              <div class="container-depoimentos h-max">
                 <div class="slider-container rounded-lg overflow-hidden">
                   <div class="slider">
                     <div class="slide">
                       <img
-                        class="lg:h-[350px] desktop:h-[450px] border-8 border-black"
+                        class="h-[430px] lg:h-[350px] desktop:h-[450px] border-8 border-black"
                         src="../src/images/img_01.png"
                         alt="Depoimento 1"
                       />
                     </div>
                     <div class="slide">
                       <img
-                        class="lg:h-[350px] desktop:h-[450px]"
+                        class="h-[430px] lg:h-[350px] desktop:h-[450px]"
                         src="../src/images/img_01.png"
                         alt="Depoimento 2"
                       />
                     </div>
                     <div class="slide">
                       <img
-                        class="lg:h-[350px] desktop:h-[450px]"
+                        class="h-[430px] lg:h-[350px] desktop:h-[450px]"
                         src="../src/images/img_01.png"
                         alt="Depoimento 3"
                       />
                     </div>
                     <div class="slide">
                       <img
-                        class="lg:h-[350px] desktop:h-[450px]"
+                        class="h-[430px] lg:h-[350px] desktop:h-[450px]"
                         src="../src/images/img_01.png"
                         alt="Depoimento 4"
                       />
                     </div>
                     <div class="slide">
                       <img
-                        class="lg:h-[350px] desktop:h-[450px]"
+                        class="h-[430px] lg:h-[350px] desktop:h-[450px]"
                         src="../src/images/img_01.png"
                         alt="Depoimento 1"
                       />
                     </div>
                     <div class="slide">
                       <img
-                        class="lg:h-[350px] desktop:h-[450px]"
+                        class="h-[430px] lg:h-[350px] desktop:h-[450px]"
                         src="../src/images/img_01.png"
                         alt="Depoimento 2"
                       />
                     </div>
                     <div class="slide">
                       <img
-                        class="lg:h-[350px] desktop:h-[450px]"
+                        class="h-[430px] lg:h-[350px] desktop:h-[450px]"
                         src="../src/images/img_01.png"
                         alt="Depoimento 3"
                       />
                     </div>
                     <div class="slide">
                       <img
-                        class="lg:h-[350px] desktop:h-[450px]"
+                        class="h-[430px] lg:h-[350px] desktop:h-[450px]"
                         src="../src/images/img_01.png"
                         alt="Depoimento 4"
                       />
@@ -570,7 +574,7 @@
 
       <!-- Section Contatos -->
       <section class="section-contact bg-[#F7F7F7]" id="contato">
-        <div class="lg:mx-36 desktop:mx-60 py-16 lg:py-28 h-full">
+        <div class="mx-6 lg:mx-36 desktop:mx-60 py-16 lg:py-28 h-full">
           <div class="flex flex-col gap-y-4">
             <h3
               class="border-[#B6781E] border-l-4 lg:border-l-8 text-2xl lg:text-3xl desktop:text-4xl pl-2 lg:pl-6 text-[#B6781E] font-semibold"
@@ -584,7 +588,7 @@
               <span class="text-black mt-4 desktop:text-xl"
                 >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </span>
-              <div class="bg-white p-8 rounded-lg shadow-md">
+              <div class="bg-white p-2 lg:p-8 rounded-lg shadow-md">
                 <form class="mt-2 space-y-4">
                   <div class="flex gap-4 desktop:flex-col">
                     <input
@@ -615,32 +619,18 @@
                     class="w-full p-3 border rounded bg-yellow-50 h-32"
                   ></textarea>
 
-                  <div class="flex space-x-4">
+                  <div class="flex space-x-2 lg:space-x-4">
                     <button
                       type="submit"
-                      class="bg-[#1F3A67] text-white py-4 px-16 desktop:px-10 desktop:py-5 rounded-2xl text-xl"
+                      class="bg-[#1F3A67] text-white py-2 px-8 lg:py-4 lg:px-16 desktop:px-10 desktop:py-5 rounded-2xl text-xl"
                     >
                       Enviar contato
                     </button>
                     <button
                       type="button"
-                      class="bg-[#D1B96E] text-white py-4 px-16 desktop:px-10 desktop:py-5 rounded-2xl text-xl flex items-center"
+                      class="bg-[#D1B96E] text-white py-2 px-8 lg:py-4 lg:px-16 desktop:px-10 desktop:py-5 rounded-2xl text-xl flex items-center"
                     >
                       <span>Falar pelo WhatsApp</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-5 h-5 ml-2"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M3.75 3.75h16.5v16.5H3.75V3.75zm8.25 13.5a5.25 5.25 0 110-10.5 5.25 5.25 0 010 10.5zm0-2.625a2.625 2.625 0 100-5.25 2.625 2.625 0 000 5.25z"
-                        />
-                      </svg>
                     </button>
                   </div>
                 </form>
@@ -654,12 +644,14 @@
     </main>
 
     <footer class="h-1/2 bg-[#1F3A67] text-white">
-      <div class="desktop:mx-60 lg:mx-36 lg:py-12 flex h-full items-center">
-        <div class="w-1/3 h-full">
+      <div
+        class="mx-6 desktop:mx-60 lg:mx-36 py-8 lg:py-12 flex flex-col-reverse lg:flex-row h-full items-center gap-6 lg:gap-0"
+      >
+        <div class="flex justify-center lg:w-1/3 h-full">
           <img src="./src/images/logo_dourada.png" alt="" style="width: 75%" />
         </div>
         <div class="w-full h-full flex">
-          <div class="w-1/2 text-right">
+          <div class="w-1/2 text-left lg:text-right">
             <h4 class="text-xl font-semibold">Contato</h4>
             <div class="flex flex-col">
               <span>+55 98 98888-8888</span>
@@ -667,7 +659,7 @@
               <span>contato@email.com</span>
             </div>
           </div>
-          <div class="w-1/2 text-right">
+          <div class="w-1/2 text-left lg:text-right">
             <h4 class="text-xl font-semibold">Endereço</h4>
             <div>
               Av. Lorem Ipsum, 000 <br />Centro - Bom Jesus, PI <br />CEP
