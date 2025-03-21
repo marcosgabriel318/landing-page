@@ -45,6 +45,7 @@ module.exports = {
       backgroundImage: {
         "logo-header": "url('/src/images/logo_dourada.png')",
         "bg-hero": "url('/src/images/bg-hero2.png')",
+        "bg-hero-mobile": "url('/src/images/bg-hero.webp')",
       },
       boxShadow: {
         "img-slider-inner":

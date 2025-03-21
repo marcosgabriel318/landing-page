@@ -134,14 +134,14 @@ document.addEventListener("DOMContentLoaded", function () {
         "shadow-md",
         "backdrop-contrast-10"
       );
-      header.classList.add("bg-[#1F3A67]");
+      header.classList.add("!bg-[#1F3A67]");
       //header.style.background = "#1F3A67";
     } else if (
       sections[index].id === "home" &&
       window.scrollY == 0 &&
       menu.classList.contains("-top-[260px]")
     ) {
-      header.classList.remove("bg-[#1F3A67]");
+      header.classList.remove("!bg-[#1F3A67]");
       header.classList.remove(
         "bg-transparent/5",
         "backdrop-blur-md",
