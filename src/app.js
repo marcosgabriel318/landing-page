@@ -13,7 +13,7 @@ const intervalDuration = 5000; // Intervalo de troca (5 segundos)
 const transitionDuration = 1000; // Duração da transição (1 segundo)
 
 document.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
+  if (window.scrollY > 0 && menu.classList.contains("-top-[260px]")) {
     //header.classList.add("bg-[#131313]/30", "backdrop-blur-md", "shadow-lg");
     header.classList.add(
       "bg-transparent/5",
@@ -32,18 +32,39 @@ document.addEventListener("scroll", () => {
 });
 
 menuIcon.addEventListener("click", () => {
+  const sections = document.querySelectorAll("section");
+  const nav = document.getElementById("navbar");
   if (
     menu.classList.contains("-top-[260px]") &&
     menu.classList.contains("-z-10")
   ) {
     menu.classList.remove("-top-[260px]");
-
-    menu.classList.add("top-14", "bg-[#1F3A67]");
+    header.classList.add("!bg-[#1F3A67]");
+    menu.classList.add("bg-[#1F3A67]");
     menu.classList.toggle("-z-10");
   } else {
-    menu.classList.remove("top-14");
-    menu.classList.add("-top-[260px]");
-    menu.classList.toggle("-z-10");
+    let index = sections.length;
+    while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+    if (sections[index].id === "servicos" || sections[index].id === "contato") {
+      menu.classList.add("-top-[260px]");
+      menu.classList.toggle("-z-10");
+      return;
+    } else {
+      header.classList.remove("!bg-[#1F3A67]");
+      if (sections[index].id !== "home") {
+        header.classList.add(
+          "bg-transparent/5",
+          "backdrop-blur-md",
+          "shadow-md",
+          "backdrop-contrast-10"
+        );
+      }
+
+      //menu.classList.remove("right-14");
+      menu.classList.add("-top-[260px]");
+      menu.classList.toggle("-z-10");
+    }
   }
 });
 
@@ -98,16 +119,15 @@ addAnimation();
 
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".nav-link");
-  const navbar = document.getElementById("navbar");
 
   function changeActiveLink() {
     let index = sections.length;
     while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
-    //navLinks.forEach((link) => link.classList.remove("active"));
-    //navLinks[index].classList.add("active");
 
-    if (sections[index].id === "servicos" || sections[index].id === "contato") {
+    if (
+      (sections[index].id === "servicos" || sections[index].id === "contato") &&
+      menu.classList.contains("-top-[260px]")
+    ) {
       header.classList.remove(
         "bg-transparent/5",
         "backdrop-blur-md",
@@ -116,7 +136,11 @@ document.addEventListener("DOMContentLoaded", function () {
       );
       header.classList.add("bg-[#1F3A67]");
       //header.style.background = "#1F3A67";
-    } else if (sections[index].id === "home" && window.scrollY == 0) {
+    } else if (
+      sections[index].id === "home" &&
+      window.scrollY == 0 &&
+      menu.classList.contains("-top-[260px]")
+    ) {
       header.classList.remove("bg-[#1F3A67]");
       header.classList.remove(
         "bg-transparent/5",
