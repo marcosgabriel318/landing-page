@@ -12,7 +12,9 @@ let posInicial = 0;
 const intervalDuration = 5000; // Intervalo de troca (5 segundos)
 const transitionDuration = 1000; // Duração da transição (1 segundo)
 
-menuIcon.addEventListener("click", () => {
+const sections = document.querySelectorAll("section");
+
+menuIcon.addEventListener("click", (event) => {
   const sections = document.querySelectorAll("section");
   const nav = document.getElementById("navbar");
   let index = sections.length;
@@ -42,11 +44,39 @@ menuIcon.addEventListener("click", () => {
         "shadow-md",
         "backdrop-contrast-10"
       );
+      menu.classList.add("text-[#FFD700]");
     }
     menu.classList.toggle("hidden");
     menu.classList.add("-top-[260px]");
     menu.classList.toggle("-z-10");
   }
+  event.stopPropagation();
+});
+
+document.addEventListener("click", (event) => {
+  let index = sections.length;
+  while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+  if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+    if (sections[index].id === "home" && window.scrollY == 0) {
+      header.classList.remove(
+        "bg-transparent/5",
+        "backdrop-blur-md",
+        "shadow-md",
+        "backdrop-contrast-10"
+      );
+    }
+    menu.classList.add("hidden");
+    menu.classList.add("-top-[260px]");
+    menu.classList.add("-z-10");
+  }
+});
+
+document.querySelectorAll(".nav-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    menu.classList.add("hidden");
+    menu.classList.add("-top-[260px]");
+    menu.classList.add("-z-10");
+  });
 });
 
 function addAnimation() {
@@ -99,8 +129,6 @@ setInterval(atualizarCarrossel, intervalDuration);
 addAnimation();
 
 document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll("section");
-
   function changeActiveLink() {
     console.log(window.scrollY);
     let index = sections.length;
