@@ -13,7 +13,13 @@ const intervalDuration = 5000; // Intervalo de troca (5 segundos)
 const transitionDuration = 1000; // Duração da transição (1 segundo)
 
 document.addEventListener("scroll", () => {
-  if (window.scrollY > 0 && menu.classList.contains("-top-[260px]")) {
+  if (
+    (window.scrollY > 0 && menu.classList.contains("-top-[260px]")) ||
+    !(
+      menu.classList.contains("-top-[260px]") &&
+      menu.classList.contains("-z-10")
+    )
+  ) {
     //header.classList.add("bg-[#131313]/30", "backdrop-blur-md", "shadow-lg");
     header.classList.add(
       "bg-transparent/5",
@@ -28,43 +34,76 @@ document.addEventListener("scroll", () => {
       "shadow-md",
       "backdrop-contrast-10"
     );
+    //header.classList.remove("bg-[#1F3A67]");
   }
 });
 
 menuIcon.addEventListener("click", () => {
   const sections = document.querySelectorAll("section");
   const nav = document.getElementById("navbar");
+  let index = sections.length;
+  while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
   if (
     menu.classList.contains("-top-[260px]") &&
     menu.classList.contains("-z-10")
   ) {
     menu.classList.remove("-top-[260px]");
-    header.classList.add("!bg-[#1F3A67]");
-    menu.classList.add("bg-[#1F3A67]");
     menu.classList.toggle("-z-10");
-  } else {
-    let index = sections.length;
-    while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
 
-    if (sections[index].id === "servicos" || sections[index].id === "contato") {
-      menu.classList.add("-top-[260px]");
-      menu.classList.toggle("-z-10");
-      return;
+    if (sections[index].id == "home") {
+      menu.classList.add(
+        "bg-transparent/5",
+        "backdrop-blur-md",
+        "shadow-md",
+        "backdrop-contrast-10"
+      );
+      header.classList.add(
+        "bg-transparent/5",
+        "backdrop-blur-md",
+        "shadow-md",
+        "backdrop-contrast-10"
+      );
     } else {
-      header.classList.remove("!bg-[#1F3A67]");
-      if (sections[index].id !== "home") {
-        header.classList.add(
-          "bg-transparent/5",
-          "backdrop-blur-md",
-          "shadow-md",
-          "backdrop-contrast-10"
-        );
-      }
+      menu.classList.add("bg-[#1F3A67]");
+    }
 
-      //menu.classList.remove("right-14");
+    //header.classList.add("!bg-[#1F3A67]");
+  } else {
+    // if (sections[index].id === "servicos" || sections[index].id === "contato") {
+    //   menu.classList.add("-top-[260px]");
+    //   menu.classList.toggle("-z-10");
+    //   console.log("Caiu no return");
+    //   return;
+    // } else {
+    //   header.classList.remove("bg-[#1F3A67]");
+    //   menu.classList.remove("bg-[#1F3A67]");
+
+    //   menu.classList.add("-top-[260px]");
+    //   menu.classList.toggle("-z-10");
+    //   header.classList.remove(
+    //     "bg-transparent/5",
+    //     "backdrop-blur-md",
+    //     "shadow-md",
+    //     "backdrop-contrast-10"
+    //   );
+    // }
+    if (
+      !(sections[index].id === "servicos" || sections[index].id === "contato")
+    ) {
+      header.classList.remove("bg-[#1F3A67]");
+      menu.classList.remove("bg-[#1F3A67]");
+
       menu.classList.add("-top-[260px]");
       menu.classList.toggle("-z-10");
+      header.classList.remove(
+        "bg-transparent/5",
+        "backdrop-blur-md",
+        "shadow-md",
+        "backdrop-contrast-10"
+      );
     }
+    menu.classList.add("-top-[260px]");
+    menu.classList.toggle("-z-10");
   }
 });
 
@@ -134,14 +173,14 @@ document.addEventListener("DOMContentLoaded", function () {
         "shadow-md",
         "backdrop-contrast-10"
       );
-      header.classList.add("!bg-[#1F3A67]");
+      header.classList.add("bg-[#1F3A67]");
       //header.style.background = "#1F3A67";
     } else if (
       sections[index].id === "home" &&
       window.scrollY == 0 &&
       menu.classList.contains("-top-[260px]")
     ) {
-      header.classList.remove("!bg-[#1F3A67]");
+      header.classList.remove("bg-[#1F3A67]");
       header.classList.remove(
         "bg-transparent/5",
         "backdrop-blur-md",
