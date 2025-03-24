@@ -43,7 +43,7 @@
           </div>
         </div>
         <ol
-          class="menu absolute w-full -top-[260px] -z-10 lg:z-[2] border-neutral-50 border-bla rounded-b-2xl text-center text-white lg:border-0 lg:flex lg:col lg:top-0 lg:relative lg:w-min lg:gap-x-8"
+          class="menu relative hidden w-full -top-[260px] -z-10 lg:z-[2] border-neutral-50 transition-all ease-in-out text-center text-white lg:border-0 lg:flex lg:col lg:top-0 lg:relative lg:w-min lg:gap-x-8"
         >
           <li
             class="py-2 my-1 lg:border-0 lg:bg-gradient-to-r lg:hover:from-initial-font lg:hover:from-15% lg:hover:via-middle-font lg:hover:via-25% lg:hover:to-final-font lg:hover:to-90% lg:hover:inline-block lg:hover:text-transparent lg:hover:bg-clip-text lg:hover:border- lg:hover:transition-all lg:ease-in-out"
@@ -66,11 +66,11 @@
             <a class="nav-link" href="#depoimentos">Depoimentos</a>
           </li>
           <li class="py-2 my-1">
-            <span
-              class="py-2 px-10 my-1 rounded-2xl border-2 border-whitelg:hover:bg-white lg:hover:bg lg:hover:transition-all lg:hover:ease-in-out"
-            >
-              <a class="nav-link" href="#contato">Contato</a></span
-            >
+            
+              <a class="nav-link" href="#contato"><span
+                class="py-2 px-10 my-1 rounded-2xl border-2 border-whitelg:hover:bg-white lg:hover:bg lg:hover:transition-all lg:hover:ease-in-out"
+              >Contato</a></span>
+
           </li>
         </ol>
       </nav>
@@ -79,7 +79,7 @@
     <main>
       <!-- Section hero main -->
       <section
-        class="section-hero relative h-svh bg-bg-hero-mobile lg:bg-bg-hero bg-cover bg-[center_left] md:bg-[center_left_-245rem] lg:bg-top"
+        class="section-hero relative h-svh bg-bg-hero-mobile lg:bg-bg-hero bg-cover bg-[center_left] lg:bg-top"
         id="home"
       >
         <!--lg:bg-bg-hero lg:bg-cover lg:bg-top"-->
@@ -222,24 +222,16 @@
                       style="width: 2.5rem; height: 2.5rem"
                     ></span>
                   </div>
-                  <div class="text-apresentation-about">
+                  <div class="flex flex-col gap-4 text-apresentation-about">
                     <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Qui id, deleniti beatae in perspiciatis quo voluptates
-                      velit fuga suscipit voluptatibus ipsum pariatur fugiat
-                      unde quod, ea quibusdam, consectetur placeat repellat!
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Qui id, deleniti beatae in perspiciatis quo voluptates
-                      velit fuga suscipit voluptatibus ipsum pariatur fugiat
-                      unde quod, ea quibusdam, consectetur placeat repellat!
+                      Nossa missão é garantir que você tenha acesso aos seus direitos previdenciários com segurança e tranquilidade. Com uma equipe especializada em Direito Previdenciário, oferecemos um atendimento personalizado para aposentadorias, revisões de benefícios, auxílio-doença, pensão por morte e outros direitos do INSS.
                     </p>
 
                     <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Qui id, deleniti beatae in perspiciatis quo voluptates
-                      velit fuga suscipit voluptatibus ipsum pariatur fugiat
-                      unde quod, ea quibusdam, consectetur placeat repellat!
+                      Entendemos que cada caso é único, por isso, trabalhamos com dedicação para encontrar a melhor solução para você. Com anos de experiência e um histórico de sucesso, nosso compromisso é assegurar que seus direitos sejam reconhecidos e sua qualidade de vida preservada.
                     </p>
+
+                
                   </div>
                   <div class="flex">
                     <button
@@ -270,10 +262,9 @@
             </h3>
 
             <h4
-              class="text-black text-justify lg:text-left lg:text-lg font-semibold"
+              class="text-black text-justify lg:text-left text-[18px] desktop:text-xl"
             >
-              Atuamos de forma ágil e precisa com uma gama de serviços. Conheça
-              abaixo um pouco mais da nossa atuação:
+            Oferecemos soluções rápidas e eficientes para garantir seus benefícios previdenciários. Veja como podemos ajudar você:
             </h4>
           </div>
 
@@ -484,10 +475,8 @@
                 O que nossos clientes dizem?
               </h3>
 
-              <span class="text-white text-justify lg:text-left desktop:text-xl"
-                >Somos especializados em direito previdenciário e atuamos de
-                forma ágil e precisa com uma gama de serviços. Conheça abaixo um
-                pouco mais da nossa atuação:
+              <span class="text-white text-justify lg:text-left text-[18px] desktop:text-xl"
+                >A satisfação dos nossos clientes é a nossa maior conquista! Confira alguns relatos reais de pessoas que garantiram seus direitos com a nossa ajuda:
               </span>
             </div>
 
@@ -582,8 +571,8 @@
 
           <div class="flex justify-between lg:h-min">
             <div class="flex w-full desktop:w-1/2 flex-col gap-y-4">
-              <span class="text-black mt-4 desktop:text-xl"
-                >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              <span class="text-black mt-4 desktop:text-xl text-[18px]"
+                >Tem dúvidas sobre seu benefício? Fale conosco e tenha o suporte de um especialista!
               </span>
               <div class="bg-white p-2 lg:p-8 rounded-lg shadow-md">
                 <form class="mt-2 space-y-4">

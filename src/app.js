@@ -12,32 +12,6 @@ let posInicial = 0;
 const intervalDuration = 5000; // Intervalo de troca (5 segundos)
 const transitionDuration = 1000; // Duração da transição (1 segundo)
 
-document.addEventListener("scroll", () => {
-  if (
-    (window.scrollY > 0 && menu.classList.contains("-top-[260px]")) ||
-    !(
-      menu.classList.contains("-top-[260px]") &&
-      menu.classList.contains("-z-10")
-    )
-  ) {
-    //header.classList.add("bg-[#131313]/30", "backdrop-blur-md", "shadow-lg");
-    header.classList.add(
-      "bg-transparent/5",
-      "backdrop-blur-md",
-      "shadow-md",
-      "backdrop-contrast-10"
-    );
-  } else {
-    header.classList.remove(
-      "bg-transparent/5",
-      "backdrop-blur-md",
-      "shadow-md",
-      "backdrop-contrast-10"
-    );
-    //header.classList.remove("bg-[#1F3A67]");
-  }
-});
-
 menuIcon.addEventListener("click", () => {
   const sections = document.querySelectorAll("section");
   const nav = document.getElementById("navbar");
@@ -49,52 +23,19 @@ menuIcon.addEventListener("click", () => {
   ) {
     menu.classList.remove("-top-[260px]");
     menu.classList.toggle("-z-10");
-
-    if (sections[index].id == "home") {
-      menu.classList.add(
-        "bg-transparent/5",
-        "backdrop-blur-md",
-        "shadow-md",
-        "backdrop-contrast-10"
-      );
+    menu.classList.toggle("hidden");
+    if (sections[index].id === "servicos" || sections[index].id === "contato") {
+      header.classList.add("bg-[#1F3A67]");
+    } else {
       header.classList.add(
         "bg-transparent/5",
         "backdrop-blur-md",
-        "shadow-md",
-        "backdrop-contrast-10"
+        "backdrop-contrast-10",
+        "shadow-md"
       );
-    } else {
-      menu.classList.add("bg-[#1F3A67]");
     }
-
-    //header.classList.add("!bg-[#1F3A67]");
   } else {
-    // if (sections[index].id === "servicos" || sections[index].id === "contato") {
-    //   menu.classList.add("-top-[260px]");
-    //   menu.classList.toggle("-z-10");
-    //   console.log("Caiu no return");
-    //   return;
-    // } else {
-    //   header.classList.remove("bg-[#1F3A67]");
-    //   menu.classList.remove("bg-[#1F3A67]");
-
-    //   menu.classList.add("-top-[260px]");
-    //   menu.classList.toggle("-z-10");
-    //   header.classList.remove(
-    //     "bg-transparent/5",
-    //     "backdrop-blur-md",
-    //     "shadow-md",
-    //     "backdrop-contrast-10"
-    //   );
-    // }
-    if (
-      !(sections[index].id === "servicos" || sections[index].id === "contato")
-    ) {
-      header.classList.remove("bg-[#1F3A67]");
-      menu.classList.remove("bg-[#1F3A67]");
-
-      menu.classList.add("-top-[260px]");
-      menu.classList.toggle("-z-10");
+    if (sections[index].id === "home" && window.scrollY == 0) {
       header.classList.remove(
         "bg-transparent/5",
         "backdrop-blur-md",
@@ -102,6 +43,7 @@ menuIcon.addEventListener("click", () => {
         "backdrop-contrast-10"
       );
     }
+    menu.classList.toggle("hidden");
     menu.classList.add("-top-[260px]");
     menu.classList.toggle("-z-10");
   }
@@ -160,13 +102,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
 
   function changeActiveLink() {
+    console.log(window.scrollY);
     let index = sections.length;
     while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
 
-    if (
-      (sections[index].id === "servicos" || sections[index].id === "contato") &&
-      menu.classList.contains("-top-[260px]")
-    ) {
+    if (sections[index].id === "servicos" || sections[index].id === "contato") {
       header.classList.remove(
         "bg-transparent/5",
         "backdrop-blur-md",
@@ -174,19 +114,34 @@ document.addEventListener("DOMContentLoaded", function () {
         "backdrop-contrast-10"
       );
       header.classList.add("bg-[#1F3A67]");
-      //header.style.background = "#1F3A67";
     } else if (
       sections[index].id === "home" &&
       window.scrollY == 0 &&
       menu.classList.contains("-top-[260px]")
     ) {
-      header.classList.remove("bg-[#1F3A67]");
       header.classList.remove(
         "bg-transparent/5",
         "backdrop-blur-md",
         "shadow-md",
         "backdrop-contrast-10"
       );
+    } else {
+      if (menu.classList.contains("-top-[260px]") == false) {
+        header.classList.add(
+          "bg-transparent/5",
+          "backdrop-blur-md",
+          "backdrop-contrast-10"
+        );
+      } else {
+        header.classList.add(
+          "bg-transparent/5",
+          "backdrop-blur-md",
+          "shadow-md",
+          "backdrop-contrast-10"
+        );
+      }
+
+      header.classList.remove("bg-[#1F3A67]");
     }
   }
 
