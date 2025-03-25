@@ -1494,8 +1494,6 @@ video {
   /* width: 100%;
     margin: auto; */
   width: 100%;
-  height: auto;
-  margin: auto;
 }
 
 .slider {
@@ -1507,20 +1505,22 @@ video {
 }
 
 .slide img {
-  width: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
   border-radius: 10px;
   border: 7px solid #cc8e36;
   box-shadow: 0 0 20px 1px #eee0b2;
 }
 
+/* .slide {
+    min-width: 8%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+  } */
+
 .slide {
-  /* width: 160px; */
-  min-width: 8%;
   flex-shrink: 0;
-  display: flex;
-  justify-content: center;
+  width: auto;
+  min-width: 8%;
 }
 
 @keyframes scroll_img {
@@ -1539,9 +1539,6 @@ video {
   }
 
   .container-depoimentos {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
     -webkit-mask-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0),
