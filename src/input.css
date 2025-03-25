@@ -88,8 +88,6 @@
   .slider-container {
     overflow: hidden;
     position: relative;
-    /* width: 100%;
-    margin: auto; */
     width: 100%;
   }
   .slider {
@@ -126,6 +124,14 @@
   }
 
   @media (max-width: 600px) {
+    @keyframes scroll_img {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
     .nav-link {
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
