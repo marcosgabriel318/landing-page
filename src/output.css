@@ -1523,15 +1523,6 @@ video {
   justify-content: center;
 }
 
-/* @keyframes scroll_img {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  } */
-
 @keyframes scroll_img {
   0% {
     transform: translateX(0);
@@ -1781,7 +1772,7 @@ video {
   }
 
   .lg\:bg-bg-hero {
-    background-image: url('/src/images/bg-hero2.png');
+    background-image: url('/src/images/bg-hero-min.webp');
   }
 
   .lg\:bg-gradient-to-r {

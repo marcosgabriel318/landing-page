@@ -116,15 +116,6 @@
     justify-content: center;
   }
 
-  /* @keyframes scroll_img {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  } */
-
   @keyframes scroll_img {
     0% {
       transform: translateX(0);
