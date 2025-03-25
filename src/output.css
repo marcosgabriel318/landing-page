@@ -2009,8 +2009,24 @@ video {
     height: 450px;
   }
 
+  .desktop\:h-dvh {
+    height: 100dvh;
+  }
+
+  .desktop\:h-svh {
+    height: 100svh;
+  }
+
+  .desktop\:h-\[470px\] {
+    height: 470px;
+  }
+
   .desktop\:max-h-\[35rem\] {
     max-height: 35rem;
+  }
+
+  .desktop\:min-h-dvh {
+    min-height: 100dvh;
   }
 
   .desktop\:w-1\/2 {
