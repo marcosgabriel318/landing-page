@@ -114,14 +114,26 @@ function atualizarCarrossel() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const slider = document.querySelector(".slider");
-  const slides = Array.from(slider.children);
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("scrollContainer");
+  const items = Array.from(container.children);
 
-  slides.forEach((slide) => {
-    let clone = slide.cloneNode(true);
-    slider.appendChild(clone);
+  // Clona os itens para garantir rolagem infinita
+  items.forEach((item) => {
+    const clone = item.cloneNode(true);
+    container.appendChild(clone);
   });
+
+  let position = 0;
+  function animate() {
+    position -= 1; // Velocidade da animação
+    if (Math.abs(position) >= items[0].offsetWidth + 20) {
+      position = 0;
+    }
+    container.style.transform = `translateX(${position}px)`;
+    requestAnimationFrame(animate);
+  }
+  animate();
 });
 
 setInterval(atualizarCarrossel, intervalDuration);
